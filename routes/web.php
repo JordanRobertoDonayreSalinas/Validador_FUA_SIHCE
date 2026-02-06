@@ -29,6 +29,8 @@ Route::middleware('auth')->group(function () {
         Route::get('/', [FuaElectronicaController::class, 'index'])->name('index');
         Route::get('/create', [FuaElectronicaController::class, 'create'])->name('create');
         Route::post('/store', [FuaElectronicaController::class, 'store'])->name('store');
+
+        Route::delete('/limpiar-bd', [FuaElectronicaController::class, 'destroyAll'])->name('destroyAll');
     });
 });
 
