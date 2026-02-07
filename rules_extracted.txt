@@ -1,0 +1,887 @@
+
+================================================================================
+HOJA: RR_00
+================================================================================
+Fila 2:  | REGLA DE CONTROL DE REGISTRO Nº 00
+DENOMINACIÓN: Identificación y vigencia de cobertura prestacional del asegurado |  |  |  | 
+Fila 3:  | OBJETIVO: Garantizar que solo se registren las prestaciones de salud de asegurados con cobertura prestacional vigente. |  |  |  | 
+Fila 4:  | CONDICIONES |  | ACCIÓN |  | 
+Fila 5:  | 1 | FUA no registra Identificador único de la afiliación en la base de datos | No permite el ingreso si no cumple las condiciones  |  | 
+Fila 6:  | 2 | FUA con asegurado sin cobertura prestacional acorde a su contrato o plan de beneficios (cobertura no esta vigente) |  |  | 
+Fila 7:  | 3 (*) | FUA cuya fecha de atención no está entre la fecha de afiliación y la fecha de baja |  |  | 
+Fila 8:  | 4 (*) | FUA con datos incorrectos: Los datos de la afiliación deben ser los mismos en el FUA y el formato de afiliación (N° de doc. De identidad, apellidos, nombres, fecha de nacimiento, sexo). |  |  | 
+Fila 9:  | (*) No aplica para la afiliación temporales. La afiliación temporal y directa debe vincularse. |  |  |  | 
+
+
+
+================================================================================
+HOJA: RR_02
+================================================================================
+Fila 2:  | REGLA DE CONTROL DE REGISTRO Nº 02
+DENOMINACION: Restriccion del registro de insumos no asociados a la atención individual de salud  |  |  |  |  |  |  | 
+Fila 3:  | OBJETIVO: Restringir la visualización de insumos que no guardan relación con la prestación, ya sea porque no corresponden a los utilizados en una atención individual de salud o porque forman parte de la estructura cualicuantitativa aprobada por el SIS, a fin de garantizar la pertinencia y precisión del registro. |  |  |  |  |  |  | 
+Fila 4:  | N.°  | CODIGO | NOMBRE | Presentacion | Concentracion | FormaFarmaceutica | TIPO | VISUALIZABLE
+Fila 5:  | 1 | 26500 | MENTOL USP | 250 g | 0 | UNI | INSUMO | N
+Fila 6:  | 2 | 26512 | FOSFATO DE POTASIO MONOBASICO P.A. | 250 g | 0 | UNI | INSUMO | N
+Fila 7:  | 3 | 26514 | IODURO DE POTASIO P.A. | 1 Kg | 0 | UNI | INSUMO | N
+Fila 8:  | 4 | 26605 | PAPEL MILIMETRADO PARA ELECTROCARDIOGRAMA 80 mm X 20 m | 0 | 0 | UNI | INSUMO | N
+Fila 9:  | 5 | 26642 | PORTA LAMINA DE ACRILICO X 100 LAMINAS | 0 | 0 | UNI | INSUMO | N
+Fila 10:  | 6 | 26667 | HEPATITIS B ANTIGENO DE SUPERFICIE | 25 DET | 0 | KIT | INSUMO | N
+Fila 11:  | 7 | 26719 | LAMINA PORTA OBJETO BISELADA 25 mm X 75 mm X 50 UNIDADES | 0 | 0 | UNI | INSUMO | N
+Fila 12:  | 8 | 26457 | COLODIUM FLEXIBLE | 1 Kg | 0 | UNI | INSUMO | N
+Fila 13:  | 9 | 26460 | OXIDO DE ZINC USP | 1 Kg | 0 | UNI | INSUMO | N
+Fila 14:  | 10 | 26462 | ALCOHOL CETILICO USP | 500 g | 0 | UNI | INSUMO | N
+Fila 15:  | 11 | 26463 | MENTOL USP | 1 Kg | 0 | UNI | INSUMO | N
+Fila 16:  | 12 | 26470 | CETIOL Q.P. | 1 Kg | 0 | UNI | INSUMO | N
+Fila 17:  | 13 | 26473 | SULFATO FERRICO HEPTAHIDRATADO | 1 Kg | 0 | UNI | INSUMO | N
+Fila 18:  | 14 | 10006 | ACEITE DE INMERSION PARA MICROSCOPIA | 10 mL | 0 | SOL | INSUMO | N
+Fila 19:  | 15 | 10007 | ACEITE DE INMERSION PARA MICROSCOPIA | 120 mL | 0 | SOL | INSUMO | N
+Fila 20:  | 16 | 10010 | ACEITE LUBRICANTE PARA PIEZA DE MANO | 225 mL | 0 | UNI | INSUMO | N
+Fila 21:  | 17 | 10015 | ACIDO ACETICO | 1 L | 0 | FCO | INSUMO | N
+Fila 22:  | 18 | 10016 | ACIDO ACETICO | 2.5 L | 0 | FCO | INSUMO | N
+Fila 23:  | 19 | 10018 | ACIDO ACETICO | 500 mL | 5% | SOL | INSUMO | N
+Fila 24:  | 20 | 10019 | ACIDO ACETICO GLACIAL Q.P. | 4 L | 0 | SOL | INSUMO | N
+Fila 25:  | 21 | 10021 | LIQUIDO FIJADOR PARA PROCESOS AUTOMATICOS | 1 gal | 0 | UNI | INSUMO | N
+Fila 26:  | 22 | 10022 | LIQUIDO FIJADOR PARA PROCESOS AUTOMATICOS | 4 gal | 0 | UNI | INSUMO | N
+Fila 27:  | 23 | 10024 | LIQUIDO FIJADOR PARA PROCESOS MANUALES | 1 L | 0 | UNI | INSUMO | N
+Fila 28:  | 24 | 10025 | LIQUIDO FIJADOR PARA PROCESOS MANUALES | 19 L | 0 | UNI | INSUMO | N
+Fila 29:  | 25 | 10031 | ACIDO FOSFOTUNGSTICO P.A. | 100 g | 0 | SOL | INSUMO | N
+Fila 30:  | 26 | 10032 | ACIDO ORTOFOSFORICO GEL (ACIDO GRABADOR DE ESMALTE) | 3 mL | 37% | UNI | INSUMO | N
+Fila 31:  | 27 | 10034 | LIQUIDO REVELADOR PARA PROCESOS AUTOMATICOS | 1 gal | 0 | UNI | INSUMO | N
+Fila 32:  | 28 | 10038 | LIQUIDO REVELADOR PARA PROCESOS MANUALES | 1 L | 0 | UNI | INSUMO | N
+Fila 33:  | 29 | 10042 | LIQUIDO REVELADOR PARA PROCESOS SEMIAUTOMATICOS | 38 L | 0 | UNI | INSUMO | N
+Fila 34:  | 30 | 10045 | REACTIVO DE ACIDO URICO | 100 DET | 0 | KIT | INSUMO | N
+Fila 35:  | 31 | 10048 | REACTIVO DE ADENOSINA DEAMINASA ENZIMATICO | 100 DET | 0 | KIT | INSUMO | N
+Fila 36:  | 32 | 10052 | HEPATITIS A ANTIGENO DE SUPERFICIE | 96 DET | 0 | KIT | INSUMO | N
+Fila 37:  | 33 | 10054 | HEPATITIS C ANTIGENO DE SUPERFICIE | 96 DET | 0 | KIT | INSUMO | N
+Fila 38:  | 34 | 10057 | CALDO SELENITO | 500 g | 0 | SOL | INSUMO | N
+Fila 39:  | 35 | 10059 | AGAR CHOCOLATE | 500 g | 0 | FCO | INSUMO | N
+Fila 40:  | 36 | 10062 | AGAR LIA (LISINA HIERRO AGAR) | 500 g | 0 | UNI | INSUMO | N
+
+
+
+================================================================================
+HOJA: RR_03
+================================================================================
+Fila 2:  | REGLA DE CONTROL DE REGISTRO Nº 03
+DENOMINACION: Restriccion del registro de medicamentos no asociados a la atención individual de salud  |  |  |  |  |  |  | 
+Fila 3:  | OBJETIVO: Restringir la visualización de medicamentos que no guardan relación con la prestación, ya sea porque no corresponden a los utilizados en una atención individual de salud o porque forman parte de la estructura cualicuantitativa aprobada por el SIS, a fin de garantizar la pertinencia y precisión del registro. |  |  |  |  |  |  | 
+Fila 4:  | N.°  | CODIGO | NOMBRE | Presentacion | Concentracion | FormaFarmaceutica | TIPO | VISUALIZABLE
+Fila 5:  | 1 | 01746 | CETRIMIDA + CLORHEXIDINA + ISOPROPANOL | 1 L | 15 g + 1.5 g + 3.14 g/100 mL | SOL | MEDICAMENTO | N
+Fila 6:  | 2 | 01749 | CETRIMIDA + CLORHEXIDINA + ISOPROPANOL | 3.785 L | 15 g + 1.5 g + 3.14 g/100 mL | SOL | MEDICAMENTO | N
+Fila 7:  | 3 | 02157 | CLORHEXIDINA | 1 L | 5 g/100 mL | JABON LIQUIDO | MEDICAMENTO | N
+Fila 8:  | 4 | 02158 | CLORHEXIDINA | 250 mL | 5 g/100 mL | JABON LIQUIDO | MEDICAMENTO | N
+Fila 9:  | 5 | 02160 | CLORHEXIDINA | 500 mL | 5 g/100 mL | JABON LIQUIDO | MEDICAMENTO | N
+Fila 10:  | 6 | 02164 | CLORHEXIDINA | 5 mL | 1 mg/ mL | SOL | MEDICAMENTO | N
+Fila 11:  | 7 | 02166 | CLORHEXIDINA | 1 L | 1.5 g/100 mL | SOL | MEDICAMENTO | N
+Fila 12:  | 8 | 02168 | CLORHEXIDINA | 3.785 L | 1.5 g/100 mL | SOL | MEDICAMENTO | N
+Fila 13:  | 9 | 02169 | CLORHEXIDINA | 3.800 L | 1.5 g/100 mL | SOL | MEDICAMENTO | N
+Fila 14:  | 10 | 02171 | CLORHEXIDINA | 5 L | 1.5 g/100 mL | SOL | MEDICAMENTO | N
+Fila 15:  | 11 | 02172 | CLORHEXIDINA | 500 mL | 1.5 g/100 mL | SOL | MEDICAMENTO | N
+Fila 16:  | 12 | 02174 | CLORHEXIDINA | 800 mL | 1.5 g/100 mL | SOL | MEDICAMENTO | N
+Fila 17:  | 13 | 02176 | CLORHEXIDINA | 1 L | 2 g/100 mL | SOL | MEDICAMENTO | N
+Fila 18:  | 14 | 02177 | CLORHEXIDINA | 2 L | 2 g/100 mL | SOL | MEDICAMENTO | N
+Fila 19:  | 15 | 02180 | CLORHEXIDINA | 4 L | 2 g/100 mL | SOL | MEDICAMENTO | N
+Fila 20:  | 16 | 02181 | CLORHEXIDINA | 5 L | 2 g/100 mL | SOL | MEDICAMENTO | N
+Fila 21:  | 17 | 02182 | CLORHEXIDINA | 500 mL | 2 g/100 mL | SOL | MEDICAMENTO | N
+Fila 22:  | 18 | 02185 | CLORHEXIDINA | 1.5 L | 4 g/100 mL | SOL | MEDICAMENTO | N
+Fila 23:  | 19 | 02187 | CLORHEXIDINA GLUCONATO | 1 L | 4 g/100 mL (4 %) | SOL | MEDICAMENTO | N
+Fila 24:  | 20 | 02190 | CLORHEXIDINA | 250 mL | 4 g/100 mL | SOL | MEDICAMENTO | N
+Fila 25:  | 21 | 02191 | CLORHEXIDINA | 3.800 L | 4 g/100 mL | SOL | MEDICAMENTO | N
+Fila 26:  | 22 | 02194 | CLORHEXIDINA | 5 L | 4 g/100 mL | SOL | MEDICAMENTO | N
+Fila 27:  | 23 | 02196 | CLORHEXIDINA | 60 mL | 4 g/100 mL | SOL | MEDICAMENTO | N
+Fila 28:  | 24 | 02197 | CLORHEXIDINA | 750 mL | 4 g/100 mL | SOL | MEDICAMENTO | N
+Fila 29:  | 25 | 02199 | CLORHEXIDINA | 0 | 5 mg | TAB | MEDICAMENTO | N
+Fila 30:  | 26 | 19196 | CLORHEXIDINA GLUCONATO | 3 g | 20 g/100 g | GEL | MEDICAMENTO | N
+Fila 31:  | 27 | 25249 | CLORHEXIDINA GLUCONATO | 1 L | 0.05 g/100 mL | GEL | MEDICAMENTO | N
+Fila 32:  | 28 | 30807 | CLORHEXIDINA | 500 mL | 120 mg/100 mL | SOL | MEDICAMENTO | N
+Fila 33:  | 29 | 41493 | CLORHEXIDINA GLUCONATO | 80 g | 120 mg/100 g | GEL | MEDICAMENTO | N
+Fila 34:  | 30 | 02159 | CLORHEXIDINA | 3.785 L | 5 g/100 mL | JABON LIQUIDO | MEDICAMENTO | N
+Fila 35:  | 31 | 02167 | CLORHEXIDINA | 2 L | 1.5 g/100 mL | SOL | MEDICAMENTO | N
+Fila 36:  | 32 | 02173 | CLORHEXIDINA | 750 mL | 1.5 g/100 mL | SOL | MEDICAMENTO | N
+Fila 37:  | 33 | 02179 | CLORHEXIDINA | 3.785 L | 2 g/100 mL | SOL | MEDICAMENTO | N
+Fila 38:  | 34 | 02184 | CLORHEXIDINA | 800 mL | 2 g/100 mL | SOL | MEDICAMENTO | N
+Fila 39:  | 35 | 02189 | CLORHEXIDINA | 2 L | 4 g/100 mL | SOL | MEDICAMENTO | N
+Fila 40:  | 36 | 02192 | CLORHEXIDINA | 4 L | 4 g/100 mL | SOL | MEDICAMENTO | N
+
+
+
+================================================================================
+HOJA: RR_05
+================================================================================
+Fila 2:  | REGLA DE CONTROL DE REGISTRO Nº 05
+DENOMINACION: Parámetros de registro de las actividades preventivas y clínicas. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 3:  | OBJETIVO: Habilitar el registro de actividades preventivas y clinicas en prestaciones específicas, optimizando la calidad del registro durante la digitación y fortaleciendo la consistencia de la información generada |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 4:  | COD ACT. PREVENTIVA | ACTIVIDAD PREVENTIVA | VALOR 1 | VALOR 2 | Tipo de formato |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 5:  | 400 | EEDP/TEPSI/TA | SI | NO | Texto |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 6:  | 019 | Recien Nacido Prematuro | SI | NO | Texto |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 7:  | 020 | Bajo peso al nacer | SI | NO | Texto |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 8:  | 021 | Enfermedad Congénita/ Secuelas de nacimiento  | SI | NO | Texto |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 9:  | 307 | Consejería Nutricional  | SI | NO | Texto |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 10:  | 018 | Valoración Clínica del Adulto Mayor (VACAM) anual | SI | NO | Texto |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 11:  | 401 | Evaluación Integral de Salud del joven o adulto anual (Eval. Joven y Adulto) | SI | NO | Texto |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 12:  | 013 | Consejeria Integral | SI | NO | Texto |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 13:  | 408 | Parto Vertical | SI | NO | Texto |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 14:  | 409 | Corte Tardío de Cordón (>2 a 3 min) | SI | NO | Texto |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 15:  | 410 | Vacunas completas para la edad | SI | NO | Texto |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 16:  | 407 | Tamizaje de Salud Mental | PATOLOGICO | NORMAL | Texto |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 17:  | SC | Grupo Riesgo | No tiene, Trabajadores de Salud, Trabajadores Sexuales, HSH, Privados de Libertad, FF.AA., Policia Nacional, Estudiantes de Salud, Politransfundidos y Drogo Dependiente |  | Texto |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 18:  | COD ACT. PREVENTIVA | ACTIVIDAD PREVENTIVA | RANGO |  | Tipo de formato |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 19:  |  |  | MÍNIMA | MÁXIMA |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 20:  | 102 | Vacuna  contra BCG | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 21:  | 117 | Vacuna  contra DPT | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 22:  | 124 | Vacuna Pentavalente  | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 23:  | 125 | Vacuna contra Sarampión, Paperas y Rubéola (SPR) | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 24:  | 126 | Vacuna contra Neumococo | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 25:  | 127 | Vacuna contra Rotavirus | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 26:  | 211 | Vacuna Anti Amarílica (AMA) | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 27:  | 313 | Vacuna contra Antipolio Oral (APO) | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 28:  | 315 | Vacuna contra la Hepatitis B en recien nacidos (HVB) | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 29:  | 316 | Vacuna  contra Antipolio Inactivada inyectable (IPV) | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 30:  | 317 | Vacuna contra Sarampión y Rubeola (SR) | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 31:  | 323 | Vacuna contra Haemophilus Influenzae tipo B (HIB) | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 32:  | 319 | Vacuna contra el Virus de Papiloma Humano (VPH) | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 33:  | 324 | Vacuna Toxoide Diftotetano Pediátrico - DT | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 34:  | 325 | Vacuna contra DT Adultos | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 35:  | 403 | Vacuna contra la Hepatitis B (HVB) mayores de 5 años | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 36:  | 405 | Vacuna contra  Influenza  | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 37:  | 411 | Vacuna contra la varicela | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 38:  | 412 | Vacuna dPta para gestante | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 39:  | 413 | Vacuna contra el Virus de la Hepatitis A (HVA) | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 40:  | 106 | Vacuna Antisarampionosa | 1 | 9 | Numero entero |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+
+
+
+================================================================================
+HOJA: RR_08
+================================================================================
+Fila 2:  | REGLA DE CONTROL DE REGISTRO Nº 08: 
+DENOMINACION: Restriccion de registro de colegiatura y especialidad por tipo de personal de salud. |  |  |  | 
+Fila 3:  | OBJETIVO: Restringir y habilitar según corresponda los campos de colegiatura y/o especialidad, para la atención de las prestaciones de salud. |  |  |  | 
+Fila 4:  | Tipo de Responsable de Atención |  | Colegiatura | Especialidad | 
+Fila 5:  | Código | Descripción |  |  | 
+Fila 6:  | 1 | Médico | SI | OPC* | 
+Fila 7:  | 2 | Farmacéutico | SI | NO | 
+Fila 8:  | 3 | Odontólogo | SI | OPC* | 
+Fila 9:  | 4 | Biólogo | SI | NO | 
+Fila 10:  | 5 | Obstetra | SI | NO | 
+Fila 11:  | 6 | Enfermera | SI | NO | 
+Fila 12:  | 7 | Trabajadora Social | SI | NO | 
+Fila 13:  | 8 | Psicólogo | SI | NO | 
+Fila 14:  | 9 | Tecnólogo Médico | SI | NO | 
+Fila 15:  | 10 | Nutricionista | SI | NO | 
+Fila 16:  | 11 | Técnico en Enfermería | NO | NO | 
+Fila 17:  | 12 | Auxiliar de Enfermería | NO | NO | 
+Fila 18:  | 13 | Técnico de Laboratorio | NO | NO | 
+Fila 19:  | 15 | Técnico de Farmacia | NO | NO | 
+Fila 20:  | 16 | Técnico PROG. Radiología | NO | NO | 
+Fila 21:  | 25 | Tecnico en rayos X | NO | NO | 
+Fila 22:  | 26 | Licenciado en educación especial (*) | SI | OPC* | 
+Fila 23:  | 27 | Tecnico en Fisioterapia y Rehabilitación | NO | NO | 
+Fila 24:  | 28 | Técnico en Optometría | NO | NO | 
+Fila 25:  | *OPC: Opcional. |  |  |  | 
+
+
+
+================================================================================
+HOJA: RR_10
+================================================================================
+Fila 2:  | REGLA DE CONTROL DE REGISTRO Nº 10
+DENOMINACIÓN: Codificación de las especialidades y necesidad de contar con RNE. |  | 
+Fila 3:  | OBJETIVO: Obliga el Registro Nacional de Especialista (RNE) cuando corresponda. |  | 
+Fila 4:  | CÓD | ESPECIALIDAD | TIPO DE RESPONSABLE DE ATENCIÓN
+Fila 5:  | 3 | GINECOLOGÍA Y OBSTETRICIA | MÉDICO
+Fila 6:  | 4 | OFTALMOLOGÍA | MÉDICO
+Fila 7:  | 5 | CIRUGÍA GENERAL | MÉDICO
+Fila 8:  | 6 | NEUROLOGÍA | MÉDICO
+Fila 9:  | 7 | ANESTESIOLOGÍA | MÉDICO
+Fila 10:  | 8 | PEDIATRÍA | MÉDICO
+Fila 11:  | 9 | DERMATOLOGÍA | MÉDICO
+Fila 12:  | 10 | ENDOCRINOLOGÍA | MÉDICO
+Fila 13:  | 12 | ORTOPEDIA Y TRAUMATOLOGÍA/TRAUMATOLOGÍA | MÉDICO
+Fila 14:  | 13 | OTORRINOLARINGOLOGÍA | MÉDICO
+Fila 15:  | 14 | CARDIOLOGÍA | MÉDICO
+Fila 16:  | 15 | NEUMOLOGÍA | MÉDICO
+Fila 17:  | 16 | GASTROENTEROLOGÍA | MÉDICO
+Fila 18:  | 17 | ONCOLOGÍA MÉDICA /MEDICINA ONCOLÓGICA | MÉDICO
+Fila 19:  | 18 | NEFROLOGÍA | MÉDICO
+Fila 20:  | 19 | UROLOGÍA | MÉDICO
+Fila 21:  | 20 | NEONATOLOGÍA | MÉDICO
+Fila 22:  | 21 | REUMATOLOGÍA | MÉDICO
+Fila 23:  | 22 | HEMATOLOGÍA CLÍNICA | MÉDICO
+Fila 24:  | 23 | INFECTOLOGÍA (MEDICINA DE ENFERMEDADES INFECCIOSAS Y TROPICALES/INFECTOLOGÍA/ ENFERMEDADES INFECCIOSAS Y TROPICALES/MEDICINA DE INFECTOLOGÍA) | MÉDICO
+Fila 25:  | 24 | ADMINISTRACIÓN Y GESTIÓN EN SALUD/ADMINISTRACIÓN DE SALUD | MÉDICO
+Fila 26:  | 25 | ANATOMÍA PATOLÓGICA | MÉDICO
+Fila 27:  | 26 | ANATOMÍA PATOLÓGICA ONCOLÓGICA | MÉDICO
+Fila 28:  | 27 | ANESTESIOLOGÍA CARDIOVASCULAR | MÉDICO
+Fila 29:  | 28 | ANESTESIOLOGÍA OBSTÉTRICA | MÉDICO
+Fila 30:  | 29 | CARDIOLOGÍA PEDIÁTRICA | MÉDICO
+Fila 31:  | 30 | CIRUGÍA DE CABEZA Y CUELLO/CIRUGÍA DE CABEZA Y CUELLO Y MAXILO FACIAL | MÉDICO
+Fila 32:  | 31 | CIRUGÍA DE MANO | MÉDICO
+Fila 33:  | 32 | CIRUGÍA ONCOLÓGICA/CIRUGÍA GENERAL ONCOLÓGICA | MÉDICO
+Fila 34:  | 33 | CIRUGÍA ONCOLÓGICA ABDOMINAL | MÉDICO
+Fila 35:  | 34 | CIRUGÍA ONCOLÓGICA DE CABEZA Y CUELLO/CIRUGÍA DE CABEZA Y CUELLO ONCOLÓGICA | MÉDICO
+Fila 36:  | 35 | CIRUGÍA ONCOLÓGICA DE MAMAS, TEJIDOS BLANDOS Y PIEL | MÉDICO
+Fila 37:  | 36 | CIRUGÍA PEDIÁTRICA | MÉDICO
+Fila 38:  | 37 | CIRUGÍA PLÁSTICA/CIRUGÍA PLÁSTICA Y REPARADORA | MÉDICO
+Fila 39:  | 38 | CIRUGÍA TORÁCICA Y CARDIOVASCULAR | MÉDICO
+Fila 40:  | 39 | CUIDADOS INTENSIVOS EN PEDIATRÍA | MÉDICO
+
+
+
+================================================================================
+HOJA: RR_82
+================================================================================
+Fila 2:  | REGLA DE CONTROL DE REGISTRO Nº 82
+DENOMINACION: Control lotes autorizados por año calendario |  |  | 
+Fila 3:  | OBJETIVO: Garantizar la coherencia entre el lote de FUA y el año calendario correspondiente, restringiendo el registro de prestaciones fuera del período autorizado. |  |  | 
+Fila 4:  | LOTE DE FUA | FECHA DE ATENCIÓN |  | ACCIÓN
+Fila 5:  |  | INICIO | FIN | 
+Fila 6:  | 25 | 2025-01-01 00:00:00 | 2025-12-31 00:00:00 | DEJAR GRABAR SI CUMPLE LOS CRITERIOS
+Fila 7:  | *24 | 2025-01-01 00:00:00 | 2025-06-30 00:00:00 | 
+Fila 8:  | LOS FUAS DE LOTE 24 CON FECHA DE ATENCION A PARTIR DEL 01.07.25 QUE NO CUMPLAN CON LOS CRITERIOS NO SE PODRAN GRABAR EN LOS APLICATIVOS INFORMATICOS DEL SIS |  |  | 
+Fila 9:  | EXCEPCIÓN
+*UNICAMENTE LOS FUAS LOTE 24 DE INTERNAMIENTO (051,052 ,054, 055, 065,066,067 Y 068) CON FECHA DE INGRESO DEL 01.01.25 AL 30.06.25 Y FECHA DE ATENCION (ALTA) A PARTIR DEL 01.07.25 PODRAN SER REGISTRADOS |  |  | 
+
+
+
+================================================================================
+HOJA: RC_01
+================================================================================
+Fila 2:  | REGLA DE CONSISTENCIA Nº 01 
+DENOMINACION: Consistencia de registro de prestaciones por edad, sexo y condiciones del asegurado. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 3:  | OBJETIVO: Optimizar la calidad de la información asegurando que las prestaciones se registren unicamente cuando corresponda a la edad, sexo y condicion de salud. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 4:  | COD. PREST.  | PRESTACIONES | ETAPA DE VIDA y/o Grupo Etario.
+(Referencia) | EDAD MINIMA | EDAD MAXIMA | SEXO
+(A: ambos, 
+F: femenino,
+M: masculino) | HOSPITALIZACION 
+(SI: S; NO: N) | GESTANTE (S/N) | PUERPERA
+(S/N) | No Gestante 
+ni Puerpera
+(S/N) | ACCIÓN |  |  |  |  |  |  |  |  | 
+Fila 5:  | 301 | Cuidado Integral de salud del Niño |  0 a 11 años  | 0 días | 11 años 11 meses y 29 días. | A | N | N | N | S | Habilita, de acuerdo a los códigos de prestación, los campos para registro de edad, sexo, hospitalización, gestante, puérpera, no gestante y no puerpera, zona de afiliación y régimen/componente. No permite grabar si sobrepasa el rango de edad |  |  |  |  |  |  |  |  | 
+Fila 6:  | 302 | Cuidado Integral de salud del Adolescente | 12 - 17 años  | 12 a | 17 años 11 meses y 29 días | A | N | N | N | S |  |  |  |  |  |  |  |  |  | 
+Fila 7:  | 303 | Cuidado Integral de salud del  Joven | 18 - 29 años | 18 a | 29 años, 11 meses y 29 días  | A | N | N | N | S |  |  |  |  |  |  |  |  |  | 
+Fila 8:  | 304 | Cuidado Integral de salud del Adulto | 30 - 59 años  | 30 a | 59 años 11 meses 29 días | A | N | N | N | S |  |  |  |  |  |  |  |  |  | 
+Fila 9:  | 305 | Cuidado Integral de salud del Adulto Mayor | 60 años a más | 60 a | 120 años 11 meses 29 días | A | N | N | N | S |  |  |  |  |  |  |  |  |  | 
+Fila 10:  | 306 | Cuidado Integral de salud Prenatal | Gestante | 9 a | 59 años 11 meses 29 días | F | N(***) | S | S | N |  |  |  |  |  |  |  |  |  | 
+Fila 11:  |  |  | Mujer en edad fertil  | 15 a | 48 años 11 meses 29 días | F | N | N | N | S |  |  |  |  |  |  |  |  |  | 
+Fila 12:  | 002 | Control del recién nacido con menos de 2,500 gr, prematuro, con secuelas al nacer | 0-1 Año | 0 días | 12 meses | A | N | N | N | S |  |  |  |  |  |  |  |  |  | 
+Fila 13:  | 029 | Tamizaje Neonatal |  | 0 días | 12 meses | A | N | N | N | S |  |  |  |  |  |  |  |  |  | 
+Fila 14:  | 001 | Control de crecimiento y desarrollo en menores entre 0 - 4 años | 0-4Años | 0 días | 4 a | A | N | N | N | S |  |  |  |  |  |  |  |  |  | 
+Fila 15:  | 118 | Control de crecimiento y desarrollo en menores entre 5 - 9 años | 5-9 Años | 5 a | 9 a | A | N | N | N | S |  |  |  |  |  |  |  |  |  | 
+Fila 16:  | 119 | Control de crecimiento y desarrollo en entre de 10 - 11 años | 10-11 Años | 10 a | 11 a | A | N | N | N | S |  |  |  |  |  |  |  |  |  | 
+Fila 17:  | 016 | Atención temprana para menores de 36 meses | 0-3 Años | 0 días | 35 meses y 29 dias | A | N | N | N | S |  |  |  |  |  |  |  |  |  | 
+Fila 18:  | 007 | Suplemento de micronutrientes  | 0-11 Años | 0 días | 11 años | A | N | N | N | S |  |  |  |  |  |  |  |  |  | 
+Fila 19:  | 005 | Consejería nutricional para niñas o niños en riesgo nutricional y desnutrición  | 0-11 Años | 0 días | 11 años | A | N | N | N | S |  |  |  |  |  |  |  |  |  | 
+Fila 20:  | 008 | Profilaxis antiparasitaria | 2 Años a + | 2a | 120a | A | N | N | N | S |  |  |  |  |  |  |  |  |  | 
+Fila 21:  | 019 | Detección trastorno agudeza visual y ceguera | Todas las Edades | 0 días | 120a | A | N | S | S | S |  |  |  |  |  |  |  |  |  | 
+Fila 22:  | 017 | Atención Integral del adolescente | 12-17 Años | 12a | 17a | A | N | S | S | S |  |  |  |  |  |  |  |  |  | 
+Fila 23:  | 020 | Salud Bucal | Todas las Edades | 0 días | 120a | A | N | S | S | S |  |  |  |  |  |  |  |  |  | 
+Fila 24:  | 021 | Prevencion de caries | 2 Años a + | 6 meses | 120a | A | N | S | S | S |  |  |  |  |  |  |  |  |  | 
+Fila 25:  | 022 | Detección de problemas en Salud Mental | Todas las Edades | 0 días | 120a | A | N | S | S | S |  |  |  |  |  |  |  |  |  | 
+Fila 26:  | 009 | Atención prenatal | Gestante | 9 a | 60a | F | N | S | N | N |  |  |  |  |  |  |  |  |  | 
+Fila 27:  | 010 | Atención del puerperio normal | Gestante | 9 a | 60a | F | N | N | S | N |  |  |  |  |  |  |  |  |  | 
+Fila 28:  | 011 | Exámenes de laboratorio completo de la gestante | Gestante | 9 a | 60a | F | N | S | N | N |  |  |  |  |  |  |  |  |  | 
+Fila 29:  | 023 | Deteccion precoz de cancer de prostata (PSA) | Adultos | 50a | 75a | M | N | N | N | S |  |  |  |  |  |  |  |  |  | 
+Fila 30:  | 025 | Detección precoz de cancer de mama (Mamografía) |  | 20a | 120a | F | N | N | S | S |  |  |  |  |  |  |  |  |  | 
+Fila 31:  | 013 | Exámenes de ecografía obstétrica | Mujer adolescente, joven y adulto | 9 a | 60a | F | N | S | N | N |  |  |  |  |  |  |  |  |  | 
+Fila 32:  | 015 | Diagnóstico del embarazo |  | 9 a | 60a | F | N | S | S | S |  |  |  |  |  |  |  |  |  | 
+Fila 33:  | 024 | Detección precoz de cáncer cérvico-uterino  |  | 25a | 65a | F | N | S | S | S |  |  |  |  |  |  |  |  |  | 
+Fila 34:  | 018 | Salud reproductiva (planificación familiar) |  | 9 a | 60a | A | N | N | S | S |  |  |  |  |  |  |  |  |  | 
+Fila 35:  | 902 | Atención Preconcepcional | Mujeres en edad reproductiva | 18 a | 45a | F | N | N | N | S |  |  |  |  |  |  |  |  |  | 
+Fila 36:  | 903 | Atenciòn Integral de Salud del Adulto Mayor | 60 a màs años | 60 a | 120 a | A | N | N | N | S |  |  |  |  |  |  |  |  |  | 
+Fila 37:  | 904 | Atención Integral de Salud del Joven y Adulto  | 18 - 59 años | 18 a | 59 a | A | N | S | S | S |  |  |  |  |  |  |  |  |  | 
+Fila 38:  | 911 | Instrucción de Higiene Oral y Asesoría nutricional para el control de enfermedades dentales | Todas las Edades | 0 días | 120a | A | N | S | S | S |  |  |  |  |  |  |  |  |  | 
+Fila 39:  | 050 | Atención inmediata del recién nacido normal | RN menor de 29 días | 0 días | 2d | A | N | N | N | S |  |  |  |  |  |  |  |  |  | 
+Fila 40:  | 051 | Internamiento del RN con patología no quirurgica |  | 0 días | 28d | A | S | N | N | S |  |  |  |  |  |  |  |  |  | 
+
+
+
+================================================================================
+HOJA: RC_04
+================================================================================
+Fila 2:  | REGLA DE CONSISTENCIA Nº 04 
+DENOMINACION: Criterios de registro del destino del asegurado por prestación.
+ |  |  |  |  |  |  |  |  |  |  | 
+Fila 3:  | OBJETIVO: Habilitar únicamente los campos válidos para el destino del asegurado de acuerdo con la prestación, restringiendo aquellos que no sean aplicables al registro. |  |  |  |  |  |  |  |  |  |  | 
+Fila 4:  | COD. PREST.  | PRESTACIONES | DESTINO DEL ASEGURADO
+(Destinos Posibles) |  |  |  |  |  |  |  |  | ACCIÓN
+Fila 5:  |  |  | ALTA | CITADO | HOSPITALIZADO | REFERIDO |  |  | CONTRARREFERIDO | CORTE ADMINISTRATIVO (**) | FALLECIDO | 
+Fila 6:  |  |  |  |  |  | EMERGENCIA | CONSULTA EXTERNA | APOYO AL DIAGNÓSTICO |  |  |  | 
+Fila 7:  | 001 | Control de crecimiento y desarrollo en menores de 0 - 4 años | X | X |  |  | X | X |  |  |  | Habilita los campos del ítem "Destino del Asegurado" en los que es posible registrar el destino del asegurado de una prestación.
+Fila 8:  | 002 | Control del recién nacido con menos de 2,500 gr. de peso, prematuro y con secuelas al nacer | X | X |  |  | X | X | X |  |  | 
+Fila 9:  | 005 | Consejería nutricional para niñas o niños en riesgo nutricional y desnutrición  | X | X |  |  | X | X | X |  |  | 
+Fila 10:  | 007 | Suplemento de micronutrientes  | X | X |  |  | X | X | X |  |  | 
+Fila 11:  | 008 | Profilaxis antiparasitaria | X | X |  |  | X | X |  |  |  | 
+Fila 12:  | 009 | Atención prenatal |  | X |  | X | X | X | X |  |  | 
+Fila 13:  | 010 | Atención del puerperio normal | X | X |  |  | X | X | X |  |  | 
+Fila 14:  | 011 | Exámenes de laboratorio completo de la gestante |  | X |  |  | X |  | X |  |  | 
+Fila 15:  | 013 | Exámenes de ecografía obstétrica |  | X |  |  | X |  | X |  |  | 
+Fila 16:  | 015 | Diagnóstico del embarazo |  | X |  |  | X |  | X |  |  | 
+Fila 17:  | 016 | Estimulación temprana para menores de 36 meses | X | X |  |  | X | X | X |  |  | 
+Fila 18:  | 017 | Atención Integral del adolescente | X | X |  |  | X | X | X |  |  | 
+Fila 19:  | 018 | Salud reproductiva (planificación familiar) |  | X |  |  | X | X | X |  |  | 
+Fila 20:  | 019 | Detección trastorno agudeza visual y ceguera | X | X |  |  | X | X | X |  |  | 
+Fila 21:  | 020 | Salud Bucal | X | X |  |  | X |  | X |  |  | 
+Fila 22:  | 021 | Prevencion de caries | X | X |  |  | X |  | X |  |  | 
+Fila 23:  | 022 | Detección de problemas en Salud Mental | X | X |  |  | X |  | X |  |  | 
+Fila 24:  | 023 | Deteccion precoz de cancer de prostata (PSA) | X | X |  |  | X |  | X |  |  | 
+Fila 25:  | 024 | Detección precoz de cáncer cérvico-uterino  | X | X |  |  | X |  | X |  |  | 
+Fila 26:  | 025 | Detección precoz de cancer de mama (Mamografía) | X | X |  |  |  |  | X |  |  | 
+Fila 27:  | 029 | Tamizaje Neonatal | X | X |  |  | X | X | X |  |  | 
+Fila 28:  | 118 | Control de crecimiento y desarrollo en menores de 5 - 9 años | X | X |  |  | X | X |  |  |  | 
+Fila 29:  | 119 | Control de crecimiento y desarrollo en menores de 10 - 12 años | X | X |  |  | X | X |  |  |  | 
+Fila 30:  | 902 | Atención Preconcepcional | X | X |  |  | X | X |  |  |  | 
+Fila 31:  | 903 | Atenciòn Integral de Salud del Adulto Mayor | X | X |  |  | X | X |  |  |  | 
+Fila 32:  | 904 | Atención Integral de Salud del Joven, Adulto  | X | X |  |  | X | X |  |  |  | 
+Fila 33:  | 911 | Instrucción de Higiene Oral y Asesoría nutricional para el control de enfermedades dentales | X | X |  |  | X |  | X |  |  | 
+Fila 34:  | 026 | Tratamiento profiláctico para gestante positiva a prueba rápida/ELISA VIH | X | X | X |  | X | X | X |  |  | Habilita, según código de prestación, los campos del ítem "Destino del Asegurado" en los que es posible registrar el destino del asegurado de una prestación.
+Fila 35:  | 027 | Tratamiento profilactico a niños expuestos al VIH | X | X | X |  | X | X | X |  |  | 
+Fila 36:  | 050 | Atención inmediata del recién nacido | X | X |  |  | X | X | X |  |  | 
+Fila 37:  | 051 | Internamiento del RN con patología no quirurgica | X | X |  | X | X | X | X | X | X | 
+Fila 38:  | 052 | Internamiento con intervención quirúrgica del RN | X | X |  | X | X | X | X | X | X | 
+Fila 39:  | 053 | Tratamiento de VIH-SIDA (0-19a) | X | X | X |  | X | X | X |  |  | 
+Fila 40:  | 054 | Atención de parto vaginal | X | X | X | X | X | X | X |  | X | 
+
+
+
+================================================================================
+HOJA: RC_06
+================================================================================
+Fila 2:  | REGLA DE CONSISTENCIA N° 6
+DENOMINCACION: Límites de registro de medicamentos por unidad de medida. |  |  |  |  |  |  |  |  | 15  diciembre 2025
+ACTUALIZACIONES REALIZADAS SEGÚN INFORME N° 000023-2025-SIS/GREP-RAC | 
+Fila 3:  | OBJETIVO: Establecer el límite de registro de medicamentos por unidad de medida considerando hospitalizados, no hospitalizados según nivel de atención |  |  |  |  |  |  |  |  |  | 
+Fila 4:  | UNIDAD DE MEDIDA |  | MINIMO  | MAXIMO |  | NIVEL DE EESS | ACCION |  |  |  | 
+Fila 5:  | FORMA TERAPEUTICA | DESCRIPCION |  | NO HOSPITALIZADOS | HOSPITALIZADOS |  |  |  |  |  | 
+Fila 6:  | BARRA | Barra | 0 | 2 | 4 | I, II, III | No dejar grabar si sobrepasa el tope máximo |  |  | Ajuste (aumento) a 270 tabletas para el tratamiento a diagnósticos vinculados a la estrategia HEARTS (Hipertensión Arterial (I10 – I15), Diabetes Mellitus tipo 2 (E10-E14) y Enfermedad Renal Crónica (N18- N19). Ver criterio (19) | 
+Fila 7:  | AER-INH | Aerosol para inhalacion | 0 | 4 | 8 | I, II, III |  |  |  |  | 
+Fila 8:  | AER-TOP | Aerosol para aplicación topica | 0 | 2 | 4 | I, II, III |  |  |  |  | 
+Fila 9:  | CAP | Capsula | 0 | 180 | 90 | I, II, III |  |  |  |  | 
+Fila 10:  | CAP_LM | Capsula low motion | 0 | 30 | 90 | I, II, III |  |  |  |  | 
+Fila 11:  | CHAMP | Medicamento en Champu  | 0 | 1 | 1 | I, II, III |  |  |  |  | 
+Fila 12:  | COLUT | Colutorio | 0 | 2 | 4 | I, II, III |  |  |  |  | 
+Fila 13:  | CRM | Crema para aplicación topica | 0 | 2(9) | 5 | I, II |  |  |  |  | 
+Fila 14:  |  |  | 0 | 6 | 5 | III |  |  |  |  | 
+Fila 15:  | CRE_VAG | Crema vaginal | 0 | 2 | 2 | I, II, III |  |  |  |  | 
+Fila 16:  | CRM_O | Crema oftalmica | 0 | 2 | 4 | I, II, III |  |  |  |  | 
+Fila 17:  | ELIX | Elixir | 0 | 1 | 1 | I, II, III |  |  |  |  | 
+Fila 18:  | EMUL | Emulsiones | 0 | 2 | 4 | I, II, III |  |  |  |  | 
+Fila 19:  | ENEMA | Enema | 0 | 6 | 10 | I, II, III |  |  |  |  | 
+Fila 20:  | ESPUM | Espuma | 0 | 2 | 4 | I, II, III |  |  |  |  | 
+Fila 21:  | FCO | Frasco | 0 | 4 | 6 | I, II, III |  |  |  |  | 
+Fila 22:  | GEL | Gel | 0 | 2(11) | 5 | I, II, III |  |  |  |  | 
+Fila 23:  | IMPLA | Implante | 0 | 1 | 1 | I, II, III |  |  |  |  | 
+Fila 24:  | INY | Solución para inyección, suspensión para inyeccion, polvo para suspension inyectable, polvo para solucion inyectable, polvo liofilizado para solucion inyectable, emulsión para inyección, concentrado para infusión intravenosa. | 0 | 50 |  | I |  |  |  |  | 
+Fila 25:  |  |  | 0 | 100 |  | II |  |  |  |  | 
+Fila 26:  |  |  | 0 | 400 |  | III |  |  |  |  | 
+Fila 27:  | JABON  | Jabon barra | 0 | 10 | 10 | I, II, III |  |  |  |  | 
+Fila 28:  | JABON LIQUIDO | Jabon Liquido | 0 | 10 | 4 | I, II, III |  |  |  |  | 
+Fila 29:  | JALEA | Jalea | 0 | 1 | 4 | I, II, III |  |  |  |  | 
+Fila 30:  | JBE | Jarabe | 0 | 4 | 6 | I |  |  |  |  | 
+Fila 31:  |  |  | 0 | 16 | 16 | II, III |  |  |  |  | 
+Fila 32:  | KIT | Kit | 0 | 2 | 2 | I, II, III |  |  |  |  | 
+Fila 33:  | LIQ - INH | Liquido para inhalación | 0 | 1 | 2 | I, II, III |  |  |  |  | 
+Fila 34:  | LOC | Loción | 0 | 2 | 4 | I, II, III |  |  |  |  | 
+Fila 35:  | ML | Mililitro | 0 | 100 | 200 | I, II, III |  |  |  |  | 
+Fila 36:  | OVU | Ovulos | 0 | 20 | 20 | I, II, III |  |  |  |  | 
+Fila 37:  | PARCHE | Parche | 0 | 5 | 4 | I, II, III |  |  |  |  | 
+Fila 38:  | POM | Pomada | 0 | 2 | 5 | I, II, III |  |  |  |  | 
+Fila 39:  | POT | Pote | 0 | 1 | 2 | I, II, III |  |  |  |  | 
+Fila 40:  | SB1 | Sobre multimicronutriente | 0 | 90 | 90 | I, II, III |  |  |  |  | 
+
+
+
+================================================================================
+HOJA: RC_09
+================================================================================
+Fila 2:  | REGLA DE CONSITENCIA Nº 09:
+DENOMINACION: Prestaciones en las que se puede brindar oxígeno y usar accesorios para bombas de infusión |  |  |  |  |  |  | 
+Fila 3:  | OBJETIVO: Establecer limites de registro de oxígeno y de accesorios de bomba de infusión, reduciendo riesgos financieros por sobrerregistro |  |  |  |  |  |  | 
+Fila 4:  | CODIGO | PRESTACIONES | CONSUMO DIARIO
+(En litros) |  | CONSUMO TOTAL AL FINAL DE LA PRESTACIÓN |  | ACCION | 
+Fila 5:  |  |  | OXÍGENO
+(08140, 41434, 44648, 44221, 
+44529, 44222, 22291)) |  | ACCESORIOS DE LA BOMBA DE INFUSIÓN
+(19681, 19682, 19683, 19684, 10934, 10930,  16730, 16727, 18353, 18352, 19817, 19929, 19818)*. |  |  | 
+Fila 6:  |  |  | MÍNIMO | MÁXIMO | MÍNIMO | MÁXIMO |  | 
+Fila 7:  | 050 | Atención inmediata del recién nacido normal | 0 | 3000 |  |  | No dejar grabar si  sobrepasa el tope máximo. | 
+Fila 8:  | 051 | Internamiento del RN con patología no quirurgica | 0 | 43200 | 0 | 30 |  | 
+Fila 9:  | 052 | Internamiento con intervención quirúrgica del RN | 0 | 43200 | 0 | 30 |  | 
+Fila 10:  | 054 | Atención de parto vaginal (5) | 0 | 3000 | 0 | 1 |  | 
+Fila 11:  | 055 | Cesárea (5) | 0 | 3000 | 0 | 1 |  | 
+Fila 12:  | 056 | Consulta externa  | 0 | 0 | X (2) |  |  | 
+Fila 13:  | 908 | Atención domiciliaria (4) | 0 | 43200 (4) | 0 | 2 |  | 
+Fila 14:  | 061 | Atención en tópico | 0 | 3000 |  |  |  | 
+Fila 15:  | 062 | Atención por emergencia | 0 | 43200 | 0 | 30 |  | 
+Fila 16:  | 063 | Atención por emergencia con observación | 0 | 43200 | 0 | 30 |  | 
+Fila 17:  | 064 | Intervención medico-quirúrgica ambulatoria | 0 | 4000 | 0 | 2 |  | 
+Fila 18:  | 065 | Internamiento en EESS sin intervención quirúrgica | 0 | 43200 | 0 | 30 |  | 
+Fila 19:  | 066 | Internamiento con intervención quirúrgica menor | 0 | 43200 | 0 | 30 |  | 
+Fila 20:  | 067 | Internamiento con intervención quirúrgica mayor | 0 | 43200 | 0 | 30 |  | 
+Fila 21:  | 068 | Internamiento con Estancia en la Unidad de Cuidados Intensivos (UCI) (6)  | 0 | 43200 | 0 | 300 |  | 
+Fila 22:  | * El tope es para cualquiera de estos insumos en forma independiente.		
+(2) Para el código prestacional de consulta externa "056", sólo aplica para prestaciones del tercer nivel y segundo nivel sin población adscrita en las cuales se registre el diagnóstico CIE 10 - Z51.2, que corresponde a "otra quimioterapia" y al menos un diagnóstico adicional.							
+(4) Para el caso de Atención domiciliaria del III nivel y II nivel, el tope máximo de oxígeno no aplica en las prestaciones que tiene como registro los diagnósticos CIE-10:  Z71.8 (Otras consultas específicas) y al menos un diagnóstico CIE 10 que motiva la atención. Cuyo tope máximo será de 432 000 Litros.				
+(5) En caso se registre en estos códigos prestacionales el CPMS 99291 "Atención Paciente-Día UCI", aplicarán los topes establecidos para el código prestacional 068. En estos casos, el FUA necesariamente debe consignar más de 1 diagnóstico CIE-10.							
+(6) En caso de oxigenoterapia por Cánula Nasal de Alto Flujo por: COVID-19 (CIE10: B342 ó B972 ó U071 ó U072) + Insuficiencia Respiratoria Aguda (J9860) considerar como tope 86,400.	 |  |  |  |  |  |  | 
+
+
+
+================================================================================
+HOJA: RC_12
+================================================================================
+Fila 2:  | REGLA DE CONSISTENCIA Nº 12:
+DENOMINACIÓN: Registro obligatorio de medicamentos, insumos y/o procedimientos asociados a la prestación. |  |  |  |  | 
+Fila 3:  | OBJETIVO: Condicionar el registro de las prestaciones a la inclusión obligatoria de medicamentos, insumos y/o procedimientos. |  |  |  |  | 
+Fila 4:  | COD. PREST. | PRESTACIÓN | ACCIÓN:
+NO DEJAR GRABAR | 05A | 05B | 
+Fila 5:  |  |  |  | MED/INSUM | Ap. Dx/ Proc | 
+Fila 6:  | 007 | Suplemento de micronutrientes | Si falta alguno | X | X | 
+Fila 7:  | 008 | Profilaxis antiparasitaria | Si falta alguno | X | X | 
+Fila 8:  | 011 | Exámenes de laboratorio completo de la gestante | Si falta |  | X | 
+Fila 9:  | 013 | Exámenes de ecografía obstétrica | Si falta |  | X | 
+Fila 10:  | 015 | Diagnóstico del embarazo | Si falta |  | X | 
+Fila 11:  | 019 | Detección de trastornos de agudeza visual y ceguera  | Si falta |  | X | 
+Fila 12:  | 020 | Salud Bucal | Si falta |  | X | 
+Fila 13:  | 911 | Instrucción de Higiene Oral y Asesoría nutricional para el control de enfermedades dentales | Si falta |  | X | 
+Fila 14:  | 021 | Prevención de caries  | Si falta |  | X | 
+Fila 15:  | 023 | Deteccion precoz de cancer de prostata (PSA) | Si falta |  | X | 
+Fila 16:  | 024 | Deteccion precoz de cáncer cérvico-uterino | Si falta |  | X | 
+Fila 17:  | 025 | Deteccion precoz de cancer de mama (Mamografía) | Si falta |  | X | 
+Fila 18:  | 026 | Tratamiento profilactico para gestante positiva a prueba rápida/ELISA VIH | Si  falta | X |  | 
+Fila 19:  | 027 | Tratamiento profilactico a niños expuestos al VIH | Si falta  | X |  | 
+Fila 20:  | 050 | Atención inmediata del recién nacido | Si  faltan alguno | X | X | 
+Fila 21:  | 051 | Internamiento del RN con patología no quirúrgica | Si  faltan alguno | X | X | 
+Fila 22:  | 052 | Internamiento con intervención quirúrgica del RN. | Si falta alguno | X | X | 
+Fila 23:  | 053 | Tx. VIH/SIDA (0 - 19 años) | Si falta  | X |  | 
+Fila 24:  | 054 | Atención de parto vaginal (2)(***) | Si falta alguno | X | X | 
+Fila 25:  | 055 | Cesárea(***) | Si  faltan ambos | X | X | 
+Fila 26:  | 902 | Atención Preconcepcional | Si  faltan alguno | X | X | 
+Fila 27:  | 903 | Atenciòn Integral de Salud del Adulto Mayor | Si falta |  | X | 
+Fila 28:  | 904 | Atención Integral de Salud del Joven, Adulto  | Si falta |  | X | 
+Fila 29:  | 906 | Consulta externa por profesionales no médicos ni odontólogos  | Si falta |  | X | 
+Fila 30:  | 056 | Consulta externa (*) | Si  faltan alguno | X | X | 
+Fila 31:  | 057 | Restauracion dental simple (Obturación y curación dental simple). | Si falta  |  | X | 
+Fila 32:  | 058 | Restauracion dental compuesta (Obturación y curación dental compuesta) | Si falta  |  | X | 
+Fila 33:  | 059 | Extraccion dental (exodoncia) | Si falta alguno | X | X | 
+Fila 34:  | 061 | Atención en tópico | Si falta  |  | X | 
+Fila 35:  | 062 | Atencion por emergencia  | Si  faltan alguno | X | X | 
+Fila 36:  | 063 | Atencion por emergencia con observación | Si  faltan alguno | X | X | 
+Fila 37:  | 064 | Intervención médico-quirurgica ambulatoria | Si  faltan alguno | X | X | 
+Fila 38:  | 065 | Internamiento en establecimiento de salud sin intervención quirúrgica | Si faltan ambos | X | X | 
+Fila 39:  | 066 | Internamiento con intervención quirurgica menor | Si faltan ambos | X | X | 
+Fila 40:  | 067 | Internamiento con intervención quirúrgica mayor (No Cesarea). | Si faltan ambos | X | X | 
+
+
+
+================================================================================
+HOJA: RC_13
+================================================================================
+Fila 2:  | REGLA DE CONSISTENCIA Nº 13
+DENOMINACION:  Consistencia de registro según código prestacional. |  |  |  |  |  |  |  |  | 15  diciembre 2025
+ACTUALIZACIONES REALIZADAS SEGÚN INFORME N° 000023-2025-SIS/GREP-RAC |  |  | 
+Fila 3:  | OBJETIVO: Evitar el registro duplicado o indebido de atención de parto vaginal o cesárea en un mismo asegurado dentro de un periodo no permitido, garantizando coherencia clínica y calidad de registro. |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 4:  | COD. PREST. | PRESTACIÓN | TOPES |  |  |  | Se considera AÑO a partir de: | ACCIÓN |  |  |  |  | 
+Fila 5:  |  |  | DIA (A) | MES (B) | AÑO (C) | INTERVALO |  |  |  |  |  |  | 
+Fila 6:  | 054 | Atención de parto | 01 | 01 | 02 | 6 meses | Desde la ultima fecha de atención de parto ó cesarea | No permite el ingreso del FUA cuando supera los topes establecidos |  | Nueva denominación de RC13: Consistencia de registro según código prestacional.
+Incorporación de Códigos prestacionales 050, 112, 116, 113 y 114 relacionados a prestaciones de atención inmediata del recién nacido y sepelio.Incorpora topes de los servicios 050,112,116,11 3,114, que estuvieron en la RV09 |  |  | 
+Fila 7:  | 055 | Cesarea | 01 | 01 | 02 | 6 meses | Desde la ultima fecha de atención de parto ó cesarea |  |  |  |  |  | 
+Fila 8:  | 50 | Atención inmediata del recién nacido normal | 1 | 1 | 1 |  |  |  |  |  |  |  | 
+Fila 9:  | 112 | Sepelio para Óbito fetal (Muerte Intraútero) | 2 | 2 | 2 |  |  |  |  |  |  |  | 
+Fila 10:  | 116 | Sepelio para recién nacido | 1 | 1 | 1 |  |  |  |  |  |  |  | 
+Fila 11:  | 113 | Sepelio para niños | 1 | 1 | 1 |  |  |  |  |  |  |  | 
+Fila 12:  | 114 | Sepelio para adolescentes y adultos | 1 | 1 | 1 |  |  |  |  |  |  |  | 
+Fila 13:  | Nota: Las observaciones se darán acorde a los periodos abierto o cerrado: Si es periodo abierto, las FUAS deberá de ordenarse cronológicamente y observar la más reciente que supera el tope. En caso de ser periodo cerrado y ordenando cronológicamente, ésta no excede el tope, no debe rechazar el FUA, debiendo marcarse el FUA de periodo cerrado que excede el tope.
+En el caso de existir una o más prestaciones en el mismo día en el mismo establecimiento se debe se observar ambas FUA.  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 14:  | Parto o FPP: b)Los criterios para calcular la última fecha de atención de parto o cesárea. La atención en los servicios de 054 ó 055 o los CPMS de 59510, 59514, 59525, 59515, 59620, 59622, 59610, 59618 y los CPMS 59400, 59510 en II y III nivel de atención en el año. Agregar a ello la marca “P” de puerpera en los diferentes servicios (en caso no se atienda, registre o digite el parto en los aplicativos). |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 15:  | El periodo de puerperio abarca hasta los 42 dias post parto |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 16:  | Año calendario: Ultima atención del año( se  hace la busqueda en los 12 meses anteriores) |  |  |  |  |  |  |  |  |  |  |  | 
+
+
+
+================================================================================
+HOJA: RC_14
+================================================================================
+Fila 2:  | Regla de Consistencia  Nº 14 
+DENOMINACION: Obligatoriedad de registro de actividades preventivas y clínicas por código prestacional |  |  |  |  |  |  |  | 
+Fila 3:  |  OBJETIVO: Garantizar que las prestaciones de salud definidas registren las actividades preventivas y clínicas establecidas por la normativa vigente, asegurando la calidad de la información. |  |  |  |  |  |  |  | 
+Fila 4:  | Cuadro Nº 1  PRESTACIONES DEL RECIEN NACIDO |  |  |  |  |  |  |  | 
+Fila 5:  | PRESTACION  |  | ACTIVIDADES PREVENTIVAS | ACCIÓN |  |  |  |  | 
+Fila 6:  | Atencion inmediata del RN normal (050) |  | EDAD GESTACIONAL DEL RN (SEM) | No dejar grabar si falta algún ítem |  |  |  |  | 
+Fila 7:  |  |  | PESO (Kg) |  |  |  |  |  | 
+Fila 8:  |  |  | TALLA |  |  |  |  |  | 
+Fila 9:  |  |  | APGAR (***) |  |  |  |  |  | 
+Fila 10:  |  |  | Vacuna BCG | No dejar grabar  si falta el ítem excepto:
+a)  "Peso (Kg)” < (menor) de  1.5  Kg
+b)  "Peso (Kg)” < (menor) de 1.5  Kg y/o el segundo diagnóstico  del FUA es el código CIE 10  Z28.0 (Inmunización no realizada por contraindicación) |  |  |  |  | 
+Fila 11:  |  |  | Vacuna Anti Hepatitis B | No dejar grabar  si falta el ítem excepto:
+a)  "Peso (Kg)" < (menor) de 1.5  Kg 
+b)  "Peso (Kg)" < (menor) de 1.5  Kg y/o  el segundo diagnóstico  del FUA es el código CIE 10  Z28.0 (Inmunización no realizada por contraindicación) |  |  |  |  | 
+Fila 12:  | * En caso de desabastecimiento de alguna de las vacunas se deberá registrar con el CIE 10 Z754 (PROBLEMAS RELACIONADOS CON OTROS SERVICIOS ASISTENCIALES NO DISPONIBLES O INACCESIBLES), para la exclusión de la obligatoriedad de las vacunas |  |  |  |  |  |  |  | 
+Fila 13:  | Cuadro Nº 2: ACTIVIDADES ATENCIÓN PRE NATAL Y  PARTO |  |  |  |  |  |  |  | 
+Fila 14:  | PRESTACION  |  | ACTIVIDADES PREVENTIVAS | ACCIÓN |  |  |  |  | 
+Fila 15:  | Atención prenatal
+(009) |  | PESO, TALLA, 
+EDAD GESTACIONAL,
+ALTURA UTERINA, PRESION ARTERIAL,
+ CONTROL PRE-NATAL | No dejar grabar si falta algún ítem |  |  |  |  | 
+Fila 16:  | 
+Atención de parto vaginal (054)
+Cesárea (055)
+ |  | PESO, TALLA, EDAD GESTACIONAL,  PRESION ARTERIAL | No dejar grabar si falta algún ítem |  |  |  |  | 
+Fila 17:  | Exámenes de ecografía obstétrica (013)
+Exámenes de laboratorio completo de la gestante (011)
+Tratamiento profiláctico para gestante positiva a prueba rápida/ELISA VIH (026) |  |  EDAD GESTACIONAL | No dejar grabar si falta algún ítem |  |  |  |  | 
+Fila 18:  | 017, 019, 020, 911, 021, 022, 024, 053, 056, 057, 058, 059, 060, 061, 062, 063, 064, 069, 070, 071, 074, 075, 200, 900, 901,  S01, 904, 906,  065, 066, 067, 068, 111, 065, 067, 068 |  | EDAD GESTACIONAL | No dejar grabar si falta algún ítem  cuando la Condición = "Gestante". |  |  |  |  | 
+Fila 19:  | Cuadro Nº 3: CALENDARIO DE INMUNIZACIONES |  |  |  |  |  |  |  | 
+Fila 20:  | PRESTACION | VACUNAS | DOSIS MAXIMA | ACCIÓN |  |  |  |  | 
+Fila 21:  | Atencion inmediata del RN normal (050) | BCG | 1 | No dejar grabar al sistema si se excede el tope de dosis de vacunas por asegurado. |  |  |  |  | 
+Fila 22:  |  | HVB  | 1 |  |  |  |  |  | 
+Fila 23:  | Control de crecimiento y desarrollo en menores de 0 - 4 años (001),
+Control del recién nacido con menos de 2,500 gr. (002). 
+Control de crecimiento y desarrollo en menores de 5 - 9 años (118) y 
+Control de crecimiento y desarrollo en menores de 10 - 12 años (119). | PENTAVALENTE | 3 |  |  |  |  |  | 
+Fila 24:  |  | APO | 3 |  |  |  |  |  | 
+Fila 25:  |  | HAV | 1 |  |  |  |  |  | 
+Fila 26:  |  | DPT  | 2 |  |  |  |  |  | 
+Fila 27:  |  | SPR | 2 |  |  |  |  |  | 
+Fila 28:  |  | NMC | 3 |  |  |  |  |  | 
+Fila 29:  |  | AMA | 1 |  |  |  |  |  | 
+Fila 30:  |  | ROTAV | 2 |  |  |  |  |  | 
+Fila 31:  |  | IPV | 4 |  |  |  |  |  | 
+Fila 32:  | Leyenda del Cuadro 3: |  |  |  |  |  |  |  | 
+Fila 33:  | BCG :     Vacuna contra TBC  | DPT: Vacuna Triple contra la Difteria, Pertusis (Tos Convulsiva) y Tétanos |  | SPR:  Vacuna contra Sarampión, Paperas y Rubéola  |  |  |  |  | 
+Fila 34:  | HVB :     Vacuna contra la Hepatitis B | PENTAVALENTE (PENTAVAL): Vacuna Pentavalente (DPT + HvB + HiB) |  | ANTINEUMOCOCICA (NMC): Vacuna contra Neumococo |  |  |  |  | 
+Fila 35:  | APO:      Vacuna Antipolio Oral | ANTIAMARILICA (AMA):   Vacuna Anti Amarílica  |  | ROTAVIRUS: Vacuna contra Rotavirus |  |  |  |  | 
+Fila 36:  | HAV:  Vacuna Contra Hepatitis A  | Vacuna Antipolio Inactivada (IVP) |  |  |  |  |  |  | 
+Fila 37:  | Cuadro Nº 4: INMUNIZACION ANTITETANICA EN LA MUJER GESTANTE(*) |  |  |  |  |  |  |  | 
+Fila 38:  | PRESTACION | DOSIS | VACUNAS | ACCIÓN |  |  |  |  | 
+Fila 39:  |  Atencion Prenatal (009)   | 3 | Vacuna DT Adultos | No dejar grabar si se excede el tope de dosis de vacunas por asegurada a lo largo del embarazo. |  |  |  |  | 
+Fila 40:  |  | 1 | Vacuna dTpa  |  |  |  |  |  | 
+
+
+
+================================================================================
+HOJA: RC_17
+================================================================================
+Fila 2:  | REGLA DE CONSISTENCIA N° 17:
+DENOMINACIÓN: Control de duplicidad de FUA |  | 
+Fila 3:  | OBJETIVO: Evitar la duplicidad en el registro de prestaciones, garantizando la identificación única de cada atención. |  | 
+Fila 4:  | DESCRIPCIÓN | ACCIÓN | 
+Fila 5:  | NÚMERO DE FUA YA DIGITADO EN EL SISTEMA | No dejar grabar duplicado al sistema. | 
+Fila 6:  | Nota: 
+1. En caso de existir FUAS duplicados en el mismo envío en el mismo periodo de producción, no se permitirá el ingreso de ningún FUA.
+2. Las IPRESS deben solicitar autorización al SIS de la cantidad de FUAS a imprimir para el año e informar las series de FUAS que aún le quedan con números de lote de años previos al vigente |  | 
+Fila 7:  | NÚMERO DE FUA CON MENOS DE 2 DIGITOS |  | Para siguiente implementación
+Fila 8:  | NÚMERO DE FUAS QUE HAYAN SUPERADO 1 AÑOS DE IMPRESIÓN A LA FECHA DE ATENCIÓN |  | Para siguiente implementación
+Fila 9:  | ** El numero de LOTE debe corresponder con el año calendario en curso, permitiendo utilizar formatos con el lote del año anterior únicamente hasta el mes de marzo de cada año. Otra excepción sustentada podrá ser determinado por la GREP. |  | No implementado, se sugiere mayor ampliación según proveído 268-2019 SIS-GREP
+
+
+
+================================================================================
+HOJA: RC_20
+================================================================================
+Fila 2:  | REGLA DE CONSISTENCIA N° 20
+DENOMINACION: Consistencia de registro de procedimientos según perfil profesional y nivel de atención. |  |  |  |  |  |  |  | 
+Fila 3:  | OBJETIVO: Limita el registro de procedimientos según perfil profesional y nivel de atención, asegurando la consistencia de registro |  |  |  |  |  |  |  | 
+Fila 4:  | CUADRO N.°1: CPMS exclusivos para el tipo de profesional  |  |  |  |  |  |  |  | 
+Fila 5:  | CODIGO  CPMS | DESCRIPCION DEL PROCEDIMIENTO | PROFESIONAL | CODIGO DE PROFESIONAL | ACCIÓN | OBSERVACION |  |  | 
+Fila 7:  | 59514 | Cesarea solamente | Médico | 1 | No dejar grabar  con el procedimiento indicado, brindada por otro profesional y fuera de las condiciones establecidas. | Todos los niveles de atención |  |  | 
+Fila 8:  | 59515 | Cesárea, incluyendo atención postparto | Médico | 1 |  |  |  |  | 
+Fila 9:  | 59510 | Atención obstétrica de rutina incluyendo atención preparto, parto por cesárea y atención postparto | Médico | 1 |  |  |  |  | 
+Fila 10:  | 59618 | Atención obstétrica de rutina incluyendo atención preparto, parto por cesárea, y atención postparto, después de intento de parto vaginal posterior a una cesárea previa  | Médico | 1 |  |  |  |  | 
+Fila 11:  | 59620 | Cesárea (solamente), después de haber intentado un parto vaginal en una usuaria de salud que previamente tuvo un parto por cesárea; incluyendo el cuidado postparto | Médico | 1 |  |  |  |  | 
+Fila 12:  | 59622 | Cesárea (solamente), después de haber intentado un parto vaginal en una usuaria de salud que previamente tuvo un parto por cesárea; incluyendo el cuidado postparto | Médico | 1 |  |  |  |  | 
+Fila 13:  | 55810 | Prostatectomía, perineal radical | Médico | 1 |  |  |  |  | 
+Fila 14:  | 55801 | Prostatectomía, perineal, subtotal (incluyendo control de sangrado postoperatorio, vasectomía, meatotomía, calibracion uretral y/o Dilatación, y meatotomía interna) | Médico | 1 |  |  |  |  | 
+Fila 15:  | 55840 | Prostatectomía retropúbica, radical, con o sin conservacion de nervio) | Médico | 1 |  |  |  |  | 
+Fila 16:  | 55831 |  Prostatectomía (incluyendo control de sangrado postoperatorio, vasectomía, meatotomía, calibracion uretral y/o Dilatación y uretrotomía interna); retropúbica, subtotal) | Médico | 1 |  |  |  |  | 
+Fila 17:  | 55821 | Prostactectomia suprapubica subtotal, uno o dos estadios (incluyendo control de sangrado postoperatorio, vasectomia, calibracion uretral y/o Dilatacion y uretromia interna) | Médico | 1 |  |  |  |  | 
+Fila 18:  | 55812 | Prostatectomía, perineal radical, con biopsia(s) de nodulos linfáticos (linfadenectomía pélvica limitada) | Médico | 1 |  |  |  |  | 
+Fila 19:  | 55815 | Prostatectomía, perineal radical, con linfadenectomia pélvica bilateral incluyendo ganglios ilíacos externos, hipogástricos y obturadores | Médico | 1 |  |  |  |  | 
+Fila 20:  | 55842 | Prostatectomía retropúbica, radical, con o sin conservacion de nervio, con biopsia(s) de nodulos linfáticos (linfadenectomía pélvica limitada) | Médico | 1 |  |  |  |  | 
+Fila 21:  | 55845 | Prostatectomía retropúbica, radical, con linfadenectomia pélvica bilateral incluyendo ganglios ilíacos externos, hipogástricos y obturadores | Médico | 1 |  |  |  |  | 
+Fila 22:  | 49590 |  Cura quirúrgica de hernia de Spiegel | Médico | 1 |  |  |  |  | 
+Fila 23:  | 49570 |  Cura quirúrgica de hernia epigástrica (p ej grasa preperitoneal); reducible (procedimiento separado) | Médico | 1 |  |  |  |  | 
+Fila 24:  | 49572 |  Cura quirúrgica de hernia epigástrica (p ej Grasa preperitoneal) incarcerada o estrangulada | Médico | 1 |  |  |  |  | 
+Fila 25:  | 49495 | Reparación, hernia inguinal inicial, lactante a término menor de 6 meses, o lactante pretérmino con más de 50 semanas postnatal, y menor de 6 meses al momento de la cirugía, con o sin hidrocelectomía; reducible | Médico | 1 |  |  |  |  | 
+Fila 26:  | 49496 | Reparación, hernia inguinal inicial, lactante a término menor de 6 meses, o lactante pretérmino con más de 50 semanas postnatal, y menor de 6 meses al momento de la cirugía, con o sin hidrocelectomía; incarcerada o estrangulada | Médico | 1 |  |  |  |  | 
+Fila 27:  | 49580 | Cura quirúrgica de hernia umbilical, menor de 5 años, reducible | Médico | 1 |  |  |  |  | 
+Fila 28:  | 49582 | Cura quirúrgica de hernia umbilical, menor de 5 años, incarcerada o estrangulada | Médico | 1 |  |  |  |  | 
+Fila 29:  | 49540 |  Cura quirúrgica de hernia lumbar | Médico | 1 |  |  |  |  | 
+Fila 30:  | 49650 |  Laparoscopía quirúrgica, hernioplastía inguinal inicial | Médico | 1 |  |  |  |  | 
+Fila 31:  | 47600 | Colecistectomía | Médico | 1 |  |  |  |  | 
+Fila 32:  | 47610 | Colecistectomía con Exploración de conducto biliar común (colédoco) | Médico | 1 |  |  |  |  | 
+Fila 33:  | 47480 | Colecistotomía o colecistostomía con Exploración, drenaje o Extirpación de cálculo (procedimiento separado) | Médico | 1 |  |  |  |  | 
+Fila 34:  | 47562 | Laparoscopía quirúrgica, colecistectomía | Médico | 1 |  |  |  |  | 
+Fila 35:  | 47563 | Laparoxopía quirúrgica, colecistectomía con colangiografía | Médico | 1 |  |  |  |  | 
+Fila 36:  | 47564 | Laparoxopía quirúrgica, colecistectomía con Exploración de vías biliares | Médico | 1 |  |  |  |  | 
+Fila 37:  | 47605 | Colecistectomía con colangiografía | Médico | 1 |  |  |  |  | 
+Fila 38:  | 44950 | Apendicectomía | Médico | 1 |  |  |  |  | 
+Fila 39:  | 44955 | Apendicectomía; cuando se realiza por una razon médica al mismo tiempo que otra cirugía (no como un procedimiento separado) (registrar por separado adicionalmente al código primario) | Médico | 1 |  |  |  |  | 
+Fila 40:  | 44960 | Apendicectomía, por ruptura de apéndice con absceso o peritonitis generalizada | Médico | 1 |  |  |  |  | 
+
+
+
+================================================================================
+HOJA: RC_26
+================================================================================
+Fila 2:  | REGLA DE CONSISTENCIA Nº 26
+DENOMINACIÓN: Control de extemporaneidad en el envió de información de las prestaciones |  |  |  |  | 
+Fila 3:  | OBJETIVO: Restringir el registro de las prestaciones fuera de plazo, asegurando la oportunidad del envío y fortaleciendo el control prestacional |  |  |  |  | 
+Fila 4:  | ID_RC | NIVEL EESS | N° DIAS CALENDARIOS | ACCION INMEDIATA | ACCION MEDIATA | 
+Fila 5:  |  |  | (plazo para envio) |  |  | 
+Fila 6:  | 1 | I | 45 | No dejar grabar FUA, si la resta de la fecha de digitación  menos la Fecha de atención, excede el plazo para el registro según el nivel de atencion | Observar las prestaciones que al aplicar el calculo de los plazos de envio de información, excede el plazo para el registro según el nivel de atencion | 
+Fila 7:  | 2 | II | 45 |  |  | 
+Fila 8:  | 3 | III | 30 |  |  | 
+Fila 9:  | PRECISIONES:
+1. Para el cálculo de los plazos de envio de información, se deben considerar las siguientes fechas en el formato dd/mm/yyyy:
+    a. Fecha de atención
+    b. Fecha de recepción de la información
+    c. Fecha de retroalimentación (mundo IPRESS)
+    d. Fecha de corrección (actualización)
+• Si el FUA no presenta observaciones, los dias totales de registro se obtiene restando la Fecha de  recepción de la información menos la Fecha de atención.
+Ejemplo: b-a = Dias.
+• En caso de prestaciones observadas, se suman los días resultantes de la diferencia entre la Fecha de corrección (actualización) y la Fecha de retroalimentación (mundo IPRESS).
+Ejemplo: (b-a)+(d-c) = Dias
+2. El plazo no incluye el período comprendido entre la Fecha de recepción de la información y la Fecha de retroalimentación del FUA por parte del SIS (publicación en el mundo IPRESS).
+3. Se entiende por Fecha de recepción de la información como la última fecha en la que se envio el FUA antes de la Fecha de retroalimentación (mundo IPRESS). Asi mismo entiendase por Fecha de corrección (actualización) a la ultima fecha en la que se actualiza el FUA.
+4. Para las prestaciones que incluyen hospitalización o internamiento, se considera como fecha de atención la fecha de alta hospitalaria y para las prestaciones administrativas (117 y 111) se considera como la fecha de atencion, la fecha de fin.
+5. La aplicación de la acción inmediata, debe aplicarse únicamente a los FUAs nuevos, entendiéndose como tales aquellos digitados por primera vez. No corresponde su aplicación a los FUAs que, tras haber sido observados, son nuevamente registrados luego de la retroalimentación |  |  |  |  | 
+Fila 10:  | EXCEPCIONES:
+1. Este criterio no aplica a los FUAs que hayan sido autorizados por la GREP como parte de un paquete de producción extemporáneo; en estos casos, deberá validarse que el periodo de atención o de alta hospitalaria corresponda con el periodo de producción autorizado
+2.  Únicamente en los casos que la GREP autorice la no aplicación de esta regla, deberá marcar los FUAS solicitados. |  |  |  |  | 
+
+
+
+================================================================================
+HOJA: RC_27
+================================================================================
+Fila 2:  | REGLA DE CONSISTENCIA N° 27
+DENOMINACION: DIAGNÓSTICOS OBLIGATORIOS EN PRESTACIONES PREVENTIVAS |  |  |  |  |  |  |  | 15  diciembre 2025
+ACTUALIZACIONES REALIZADAS SEGÚN INFORME N° 000023-2025-SIS/GREP-RAC
+Fila 3:  | OBJETIVO: Asegurar que las prestaciones preventivas se registren con diagnósticos consistente y no contradictorios, exigiendo la inclusión obligatorio de códigos CIE 10 a fin de garantizar coherencia en la atención integral de salud |  |  |  |  |  |  |  | 
+Fila 4:  | COD. PREST.  | Grupos de Diagnósticos | Descripción del Diagnóstico | Código CIE | Criterio 1 | Criterio 2 | Acción |  | 
+Fila 5:  | 001, 002, 118, 119 | Grupo A  | Control de Salud de rutina del niño (Niño Normal) | Z001 |  | Registrar por lo menos uno de los  8 diagnósticos descritos(*)
+ | No dejar grabar  las prestación si se inclumplen los criterios |  | 
+Fila 6:  |  | Grupo B | Desnutrición Proteico calórica Severa, No Especificada (Delgadez severa) | E43X | Diagnósticos mutuamente excluyentes. |  |  |  | Nueva denominación de la Regla por "DIAGNÓSTICOS OBLIGATORIOS EN PRESTACIONES PREVENTIVAS", 
+Las actualizaciones consisten en incorporar y retirar diagnósticos CIE-10 según pertinencia clínica, organizándolos en grupos mutuamente excluyentes.
+Asimismo, se establecen criterios obligatorios de registro diagnóstico para garantizar coherencia, validez y calidad en las prestaciones preventivas. 
+Fila 7:  |  |  | Desnutrición Proteicocalorica Leve | E441 |  |  |  |  | 
+Fila 8:  |  |  | Historia personal de otros factores de riesgo, no clasificados en otra parte (Riesgo de desnutrición). | Z91.8 |  |  |  |  | 
+Fila 9:  |  |  | Desnutrición Proteico calórica Moderada (Delgadez) | E440 |  |  |  |  | 
+Fila 10:  |  |  | Obesidad debida a exceso de Calorías  (Sobrepeso) | E660 |  |  |  |  | 
+Fila 11:  |  |  | Obesidad, No especificada | E669 |  |  |  |  | 
+Fila 12:  |  | Grupo C  | Retardo del Desarrollo debido a Desnutrición Proteico calórica (Talla baja) | E45X | Diagnósticos mutuamente excluyentes. |  |  |  | 
+Fila 13:  |  |  | Estatura alta Constitucional (Talla alta) | E344 |  |  |  |  | 
+Fila 14:  | 903 | Grupo A | EXAMEN MÉDICO GENERAL (NORMAL) | Z000 | Diagnósticos mutuamente excluyentes. | Registrar por lo menos uno de los  10 diagnósticos descritos  |  |  | 
+Fila 15:  |  | Grupo B | OTROS EXAMENES GENERALES (NORMAL) | Z008 |  |  |  |  | 
+Fila 16:  |  | Grupo C | Desnutrición Proteico calórica Moderada (Delgadez) | E440 |  |  |  |  | 
+Fila 17:  |  |  | Obesidad debida a exceso de Calorías  (Sobrepeso) | E660 |  |  |  |  | 
+Fila 18:  |  |  | Obesidad, No especificada | E669 |  |  |  |  | 
+Fila 19:  |  |  | Delgadez Grado I | E46X1 |  |  |  |  | 
+Fila 20:  |  |  | Delgadez Grado II | E46X2 |  |  |  |  | 
+Fila 21:  |  |  | Delgadez Grado III | E46X3 |  |  |  |  | 
+Fila 22:  |  |  | Obesidad Grado I | E6691 |  |  |  |  | 
+Fila 23:  |  |  | Obesidad Grado II | E6692 |  |  |  |  | 
+Fila 24:  |  |  | Obesidad Grado III | E6693 |  |  |  |  | 
+Fila 25:  | 904 | Grupo A | EXAMEN MÉDICO GENERAL (NORMAL) | Z000 | Diagnósticos mutuamente excluyentes. | Registrar por lo menos uno de los 10 diagnósticos descritos |  |  | 
+Fila 26:  |  | Grupo B | OTROS EXAMENES GENERALES (NORMAL) | Z008 |  |  |  |  | 
+Fila 27:  |  | Grupo C | Desnutrición Proteico calórica Moderada (Delgadez) | E440 |  |  |  |  | 
+Fila 28:  |  |  | Obesidad debida a exceso de Calorías  (Sobrepeso) | E660 |  |  |  |  | 
+Fila 29:  |  |  | Obesidad, No especificada | E669 |  |  |  |  | 
+Fila 30:  |  |  | Delgadez Grado I | E46X1 |  |  |  |  | 
+Fila 31:  |  |  | Delgadez Grado II | E46X2 |  |  |  |  | 
+Fila 32:  |  |  | Delgadez Grado III | E46X3 |  |  |  |  | 
+Fila 33:  |  |  | Obesidad Grado I | E6691 |  |  |  |  | 
+Fila 34:  |  |  | Obesidad Grado II | E6692 |  |  |  |  | 
+Fila 35:  |  |  | Obesidad Grado III | E6693 |  |  |  |  | 
+Fila 36:  | 017 | Grupo A | Exámen del estado de desarrollo del Adolescente (Adolescente normal) | Z003 |  | Registrar por lo menos uno de los  9 diagnósticos descritos
+ |  |  | 
+Fila 37:  |  | Grupo B | Desnutrición Proteico calórica Severa, No Especificada (Delgadez severa) | E43X | Diagnósticos mutuamente excluyentes. |  |  |  | 
+Fila 38:  |  |  | Desnutrición Proteicocalorica Leve | E441 |  |  |  |  | 
+Fila 39:  |  |  | Historia personal de otros factores de riesgo, no clasificados en otra parte (Riesgo de desnutrición). | Z91.8 |  |  |  |  | 
+Fila 40:  |  |  | Desnutrición Proteico calórica Moderada (Delgadez) | E440 |  |  |  |  | 
+
+
+
+================================================================================
+HOJA: RC_30
+================================================================================
+Fila 2:  | REGLA DE CONSISTENCIA N° 30:
+DENOMINACION: Registro obligatorio de fecha probable de parto/fecha de parto en prestaciones obstétricas |  |  |  |  |  |  |  | 
+Fila 3:  | OBJETIVO: Garantiza el registro obligatorio, completo y consistente de la fecha probable departo y la fecha de parto en todas las prestaciones obstétricas brindadas en los niveles I, II y III asegurando la coherencia temporal entre FPP, FP, Fecha de atención y fecha de alta |  |  |  |  |  |  |  | 
+Fila 4:  | CUADRO N° 01: |  | FECHA PROBABLE DE PARTO Y FECHA DE PARTO POR CÓDIGO PRESTACIONAL |  |  |  |  |  | 
+Fila 5:  | CONDICION OBSTETRICA |  | SERVICIO | REGISTRO OBLIGATORIO | CRITERIO |  | NIVEL DE ATENCIÓN | ACCION | 
+Fila 6:  | GESTANTE (S/N) | S |  009, 011, 013, 017,  019, 020, 021, 022, 024, 026,053,056,057,058,059,060,061,062,063, 064, 069,070,074, 075,200,900,901, 904, 906 | FECHA PROBABLE DE PARTO | FECHA PROBABLE DE PARTO > FECHA DE ATENCION (1)(3) |  | I,II y III | No dejar grabar si INCUMPLE  el criterio | 
+Fila 7:  |  | S |  065, 066, 067, 068 | FECHA PROBABLE DE PARTO | FECHA PROBABLE DE PARTO > FECHA DE ALTA |  | I,II y III |  | 
+Fila 8:  |  | S | 111 | FECHA PROBABLE DE PARTO | FECHA PROBABLE DE PARTO > FECHA DE ALTA  |  | I,II y III |  | 
+Fila 9:  |  | S | 306 SIN CIE10 DE PARTO (O800 o O8000 o O8001 o O801 o O808 o O809 o O840 o O841 o O842 o O848 o O849) | FECHA PROBABLE DE PARTO | FECHA PROBABLE DE PARTO > FECHA DE ATENCION (1)(3) |  | I,II y III |  | 
+Fila 10:  |  | S | 306 CON CIE10 DE PARTO (O800 o O8000 o O8001 o O801 o O808 o O809 o O840 o O841 o O842 o O848 o O849) | FECHA DE PARTO | FECHA DE PARTO <   Ó = FECHA DE ALTA |  | I,II y III |  | 
+Fila 11:  |  | S | 054, 055 | FECHA DE PARTO | FECHA DE PARTO <   Ó = FECHA DE ALTA |  | I,II y III |  | 
+Fila 12:  | PUERPERA
+(S/N) (***) | S |  010, 017, 018, 019, 020, 021, 022, 024, 025, 053,056,057,058,059,060,061,062,063,064, 069, 070,074, 075,200,900,901, 904, 906, 026. | FECHA DE PARTO | FECHA DE PARTO < Ó =   FECHA DE ATENCION |  | I,II y III |  | 
+Fila 13:  |  | S |  065, 066, 067, 068 | FECHA DE PARTO | FECHA DE PARTO <  FECHA DE ALTA |  | I,II y III |  | 
+Fila 14:  |  | S | 111 | FECHA DE PARTO | FECHA DE PARTO <  FECHA DE ALTA |  | I,II y III |  | 
+Fila 15:  | nota: La fecha de parto y la fecha probable de parto utilizan el mismo campo de registro. |  |  |  |  |  |  |  | 
+Fila 16:  | (1)La fecha probable de parto, no puede ser mayor a 11 meses después de la fecha de atención y/o fecha de ingreso en paciente hospitalizado. |  |  |  |  |  |  |  | 
+Fila 17:  | (2)La fecha de parto no puede ser mayor a 45 días antes de la fecha de atención y/o fecha de ingreso en paciente hospitalizado. |  |  |  |  |  |  |  | 
+Fila 18:  | (3) La FPP puede ser menor que la Fecha de Atención cuando la gestante tengas 40 semanas o más |  |  |  |  |  |  |  | 
+Fila 19:  | CUADRO N° 02: |  | FECHA DE PARTO POR PROCEDIMIENTO |  |  |  |  |  | 
+Fila 20:  | CONDICION OBSTETRICA | COD CPMS | NOMBRE DEL CPMS | REGISTRO OBLIGATORIO | CRITERIO |  | NIVEL | ACCION | 
+Fila 21:  | GESTANTE (S/N) | 59510 | Atención obstétrica de rutina: atención preparto, parto por cesárea y atención postparto | FECHA DE PARTO | FECHA DE PARTO >= FECHA DE INGRESO Y <= FECHA DE ALTA |  | II y III | No dejar grabar si INCUMPLE  el criterio | 
+Fila 22:  |  | 59514 | Cesarea Solamente |  |  |  | II y III |  | 
+Fila 23:  |  | 59525 | Cesarea mas histerectomia subtotal o total (registrar separadamente ademas del codigo para el procedimiento primario) |  |  |  | II y III |  | 
+Fila 24:  |  | 59515 | Solamente parto por cesárea; incluyendo atención postparto |  |  |  | II y III |  | 
+Fila 25:  |  | 59620 | Cesárea solamente, después de intento de parto vaginal posterior a una cesárea previa; |  |  |  | II y III |  | 
+Fila 26:  |  | 59622 | Cesárea solamente, después de intento de parto vaginal posterior a una cesárea previa; incluyendo atención postparto |  |  |  | II y III |  | 
+Fila 27:  |  | 59400 |  (atencion obstetrica de rutina, incluyendo atencion del trabajo de parto vaginal (con o sin episiotomia y/o forceps) y atencion  postparto (alumbramiento dirigido) |  |  |  | I, II y III |  | 
+Fila 28:  |  | 59409 | Atención de parto vaginal solamente (con o sin episiotomía) |  |  |  | I,II y III |  | 
+Fila 29:  |  | 59610 | Atención obstétrica de rutina incluyendo atención preparto, parto vaginal (con o sin episiotomíay/o fórceps) y atención postparto, después de una cesárea previa  |  |  |  | I,II y III |  | 
+Fila 30:  |  | 59410 | Atención de parto vaginal (unicamente) (con o sin episiotomía), incluyendo atención postparto |  |  |  | I,II y III |  | 
+Fila 31:  |  | 59612 | Parto vaginal (solamente), después de cesárea previa (con o sin episiotomía) |  |  |  | I,II y III |  | 
+Fila 32:  |  | 59614 | Parto vaginal (solamente), después de cesárea previa (con o sin episiotomía); incluyendo el cuidado postparto |  |  |  | I,II y III |  | 
+Fila 33:  |  | 59618 | Atención obstétrica de rutina incluyendo atención preparto, parto por cesárea, y atenciónpostparto, después de intento de parto vaginal posterior a una cesárea previa  |  |  |  | I,II y III |  | 
+
+
+
+================================================================================
+HOJA: RC_31
+================================================================================
+Fila 2:  | REGLA DE CONSISTENCIA N° 31:
+DENOMINACION: Registro obligatorio de resultados en procedimientos clínicos. |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 3:  | OBJETIVO:  Asegurar la consistencia y la obligatoriedad del registro de resultados en procedimientos diagnósticos seleccionados. |  |  |  |  |  |  |  |  |  |  |  |  | 
+Fila 4:  | RESULTADO OBLIGATORIO | PROCEDIMIENTO CPMS |  | UNIDAD DE MEDIDA | CÓDIGO PRESTACIONAL | NIVEL | CANTIDAD EJECUTADA O ENTREGADA | MIN | MAX | CRITERIO | ACCION  |  |  | 
+Fila 5:  | Ojo Derecho (OD) y Ojo Izquierdo (OI) | 99173 | Prueba de agudeza visual o cuantitativa o bilateral | 20/ | 301, 302, 303, 304, 305, 306 y 019 | TODOS LOS NIVELES | Mayor o igual que a uno "1" | 200 o 100 o 70 o 50 o 40 o 30 o 25 o 20 |  |  | ACCION N° 1
+No dejar grabar si incumple los rangos establecidos
+
+ACCION N° 2
+Al registrar los resultados de cualquiera de los procedimiento mostrar el siguiente mensaje "Está seguro del resultado consignado" para su confirmación
+ |  |  | 
+Fila 6:  | REGISTRO DEL RESULTADO DE HEMOGLOBINA (1)  | 85018 | Hemoglobina | gr/dl | 001, 118, 119, 002, 005, 007, 008, 009, 010, 011, 015, 016, 017, 018, 019, 020, 021, 022, 023, 024, 025, 026, 027, 029, 050, 051, 052, 053, 054, 055, 056, 057, 058, 059, 060, 061, 062, 063, 064, 065, 066, 067, 068, 069, 070,071,074, 075, 200, 900, 901, 060, 075, 902, 903, 904, 906, 301, 302, 303, 304, 305, 306 | I, II y III NIVEL |  | 1 | 30.00 | Mutualmente excluyente para la obligatoriedad del resultado |  |  |  | 
+Fila 7:  |  | 85018.01 | Hemoglobina con hemoglobinometro | gr/dl |  |  |  |  |  |  |  |  |  | 
+Fila 8:  |  | 85027 | Recuento sanguíneo completo automatizado (hemoglobina, hematocrito, eritrocitos, leucocitos y plaquetas) | gr/dl |  |  |  |  |  |  |  |  |  | 
+Fila 9:  |  | 85031 | Recuento sanguíneo completo automatizado (hemoglobina, hematocrito, eritrocitos, leucocitos y plaquetas) | gr/dl |  |  |  |  |  |  |  |  |  | 
+Fila 10:  | (1) En caso de tener mas de 1 CPMS solo es necesario el registro de un solo valor. |  |  |  |  |  |  |  |  |  |  |  |  | 
+
+
+
+================================================================================
+HOJA: RC_32
+================================================================================
+Fila 2:  | REGLA DE CONSISTENCIA N° 32:
+DENOMINACIÓN: Consistencia clínica en procedimientos mutuamente excluyentes. |  |  |  |  |  | 15  diciembre 2025
+ACTUALIZACIONES REALIZADAS SEGÚN INFORME N° 000023-2025-SIS/GREP-RAC |  | 
+Fila 3:  | OBJETIVO: Garantizar la consistencia clínica evitando la duplicidad de códigos de procedimientos dentro de un mismo grupo relacionado. |  |  |  |  |  |  |  | 
+Fila 4:  | COD. PREST.  | PROCEDIMIENTO | CPMS | CRITERIO | ACCION |  |  |  | 
+Fila 5:  | 067, 068 | Prostatectomía  | 55812, 55810, 55815, 55801, 55840,  55831, 55821, 55842, 55845 | Los códigos 55812, 55810, 55815, 55801, 55840,  55831, 55821, 55842, 55845, son excluyentes entre sí. |  |  | Restringir el registro simultaneo del código SISMED 02436 (solución de nutrición parenteral de 500 Ml) y el CPMS 99562 Nutrición parenteral por día, por generar duplicidad en el registro de prestaciones y en la valorización económica asociada. |  | 
+Fila 6:  | 067, 052, 068 | Hernioplastía | 49590, 49570, 49572, 49495, 49496,  49580, 49582, 49540, 49650 | Los códigos 49590, 49570, 49572, 49495, 49496, 49580, 49582, 49540, 49650,  son excluyentes entre sí. |  |  |  |  | 
+Fila 7:  | 067, 068 | Colecistectomía |  47600, 47610,  47480, 47562, 47563, 47564, 47605 | Los códigos  47600, 47610,  47480, 47562, 47563, 47564, 47605 son excluyentes entre sí. |  |  |  |  | 
+Fila 8:  | 067, 068, 052 | Apendicectomía | 44950, 44955, 44960, 44951, 44962, 44970 | Los códigos 44950, 44955, 44960, 44951, 44962, 44970 son excluyentes entre sí. |  |  |  |  | 
+Fila 9:  | 064, 067, 066, 068 | Conización del cervix | 57520, 57522 | Los códigos 57520, 57522 son excluyentes entre sí. |  |  |  |  | 
+Fila 10:  | 067, 054, 055, 068 | Histerectomía |  58150, 58150,01, 58152, 58180, 58200, 58210, 58240, 58260, 58262, 58263, 58267, 58270, 58275, 58280, 58285, 58550, 59525, 58541, 58552, 58553, 58554 | Los códigos 58150, 58152, 58150.01,,58180, 58200, 58210, 58240, 58260, 58262, 58263, 58267, 58270, 58275, 58280, 58285, 58550, 59525, 58541, 58552, 58553, 58554 son excluyentes entre sí. |  |  |  |  | 
+Fila 11:  | 062, 063, 065, 066, 067, 068, 054, 055, 051, 052 | Atención de Emergencia, Prioridad I , Atención de Emergencia, Prioridad II, Atención de Emergencia, Prioridad III, 
+Atención de Emergencia, Prioridad IV | 99285, 99285.01,   99284, 99284.01, 99281, 99282, 99283 | 99285, 99285.01, 99284, 99284.01, 99281, 99282, 99283 son excluyentes entre sí. |  |  |  |  | 
+Fila 12:  | 056, 908 | Consulta ambulatoria | 99204,  99215.01, 92004, 92014, 99247, 99201, 99201.01, 99201.02, 99202, 99203, 99211, 99211.01, 99211.02, 99212, 99213, 99215, 99215.01, 99215.02, 99246, 99246.01, 99246.02, 99249, 99342, 99344 y 99349 | 99204,  99215.01, 92004, 92014, 99247, 99201, 99201.01, 99201.02, 99202, 99203, 99211, 99211.01, 99211.02, 99212, 99213, 99215, 99215.01, 99215.02, 99246, 99246.01, 99246.02, 99249, 99342, 99344 y 99349  son excluyentes entre sí. |  |  |  |  | 
+Fila 13:  | 065, 066, 067, 068, 054, 055, 051, 052 | Interconsulta de hospitalización | 99241, 99251, 99254, 99255 | 99241, 99251, 99254, 99255 excluyentes entre sí. |  |  |  |  | 
+Fila 14:  | 064, 065, 066, 067, 068,  | Mastectomía por ginecomastía, Mastectomía simple, completa, Mastectomía radical, incluyendo músculos pectorales, ganglios linfáticos axilares, Mastectomía radical incluyendo músculos pectorales, ganglios linfáticos axilares y mamarios internos | 19300, 19303, 19305, 19306 | 19300, 19303, 19305, 19306 excluyentes entre sí. |  |  |  |  | 
+Fila 15:  | 066, 067, 068 | Mastectomía parcial, Mastectomía parcial con Linfadenectomía axilar | 19301, 19302 | 19301, 19302 excluyentes entre sí, y no deben se registrados después del registro del CPMS: 19300, 19303, 19305 y 19306 |  |  |  |  | 
+Fila 16:  | 064, 065, 066, 067, 068,  | Ostectomía parcial del esternón, resección radical del esternón | 21620, 21630 | 21620, 21630 excluyentes entre sí. |  |  |  |  | 
+Fila 17:  | 064, 065, 066, 067, 068,  | Esplenectomía total, esplenectomía por vía laparoscópica | 38100, 38120. | 38100, 38120 excluyentes entre sí. |  |  |  |  | 
+Fila 18:  | 067 y 068 | Esplenectomía parcial | 38101 | No permite el ingreso d el CPMS 38101 después del registro del CPMS:38100, 38120. |  |  |  |  | 
+Fila 19:  | 064, 065, 066, 067, 068,  | Glosectomía | 41150, 41153, 41155. | 41150, 41153, 41155 excluyentes entre sí. |  |  |  |  | 
+Fila 20:  | 067 y 068 | Glosectomía parcial | 41120, 41135 | No permite el ingreso del CPMS 41120 o 41132 después del registro del CPMS:41150, 41153 y 41155. |  |  |  |  | 
+Fila 21:  | 064, 065, 066, 067, 068,  | Amigdalectomía y adenoidectomía, adenoidectomía |  42820, 42830. |  42820, 42830 excluyentes entre sí. |  |  |  |  | 
+Fila 22:  | 064, 065, 066, 067, 068,  | Vagotomía realizada junto con gastrectomía distal parcial, vagotomía incluyendo piloroplastía, con o sin gastrostomía, vagotomía incluyendo piloroplastía, con o sin gastrostomía; de células parietales (altamente selectiva), vagotomía troncular por laparoscopía | 43635, 43640, 43641, 43651. | 43635, 43640, 43641, 43651 excluyentes entre sí. |  |  |  |  | 
+Fila 23:  | 064, 065, 066, 067, 068,  | Colectomía total, abdominal, sin proctectomía, colectomía total, abdominal, con proctectomía | 44150, 44155. | 44150, 44155 excluyentes entre sí. |  |  |  |  | 
+Fila 24:  | 066, 067, 068 | Proctectomía: completa, combinada abdóminoperineal, con colostomía, proctectomía, completa (por megacolon congénito), abordajes abdominal y perineal | 52601, 55801, 55810, 55821, 55831, 55840, 45120 | 52601, 55801, 55810, 55821, 55831, 55840, 45120 excluyentes entre sí. |  |  |  |  | 
+Fila 25:  | 064, 065, 066, 067, 068,  | Cistectomía completa, cistectomía completa con linfadenectomía pélvica bilateral, cistectomía completa, con ureterosigmoidostomía o transplantes ureterocutáneos, cistectomía completa con ureterosigmoidostomía o trasplantes ureterocutáneos y linfadenectomía pélvica bilateral | 51570, 51575, 51580, 51585. | 51570, 51575, 51580, 51585 excluyentes entre sí. |  |  |  |  | 
+Fila 26:  | 064, 065, 066, 067, 068,  | Amputación de pene: completa, amputación de pene, radical; con linfadenectomía inguinofemoral bilateral | 54125, 54130. | 54125, 54130 excluyentes entre sí. |  |  |  |  | 
+Fila 27:  | 064, 065, 066, 067, 068,  | Orquiectomía por laparoscopía, orquiectomía simple (incluyendo subcapsular), con o sin prótesis testicular, abordaje escrotal o inguinal, orquiectomía bilateral, orquiectomía radical, por tumor; abordaje inguinal | 54690, 54520, 54530. | 54690, 54520, 54530 excluyentes entre sí. |  |  |  |  | 
+Fila 28:  | 064, 067 y 068 | Laparoscopía quirúrgica; orquiectomía | 54690 | No permite el ingreso del CPMS 54690 después del registro del CPMS 54525. |  |  |  |  | 
+Fila 29:  | 064, 067 y 068 | Orquiectomía simple (incluyendo subcapsular), con o sin prótesis testicular, abordaje escrotal o inguinal | 54520 | No permite el ingreso del CPMS 54520 después del registro del CPMS 54525. |  |  |  |  | 
+Fila 30:  | 064, 067 y 068 | Orquiectomía radical, por tumor; abordaje inguinal | 54530 | No permite el ingreso del CPMS 54530 después del registro del CPMS 54525. |  |  |  |  | 
+Fila 31:  | 064, 065, 066, 067, 068,  | Salpingectomía, abordaje abdominal, salpingostomía, abordaje abdominal, salpingostomía laparoscópica, salpingectomía laparoscópica | 59120, 59121, 59150, 59151. | 59120, 59121, 59150, 59151. |  |  |  |  | 
+Fila 32:  | 054, 055,  065, 066, 067, 068,  | Atención de parto y cesarea | 59400, 59409, 59410, 59610, 59612, 59614, 59514, 59515, 59510, 59618, 59620, 59622, 59409.01. | 59400, 59409, 59410, 59610, 59612, 59614, 59514, 59515, 59525, 59510, 59618, 59620, 59622, 59409.01 excluyentes entre sí. |  |  |  |  | 
+Fila 33:  | 300, 056,906,071 | Telemedicina | 99499.01,99499.03, 99499.08, 99499.09, 99499.10, 99499.11, 99499.12 | Los códigos 99499.01,99499.03, 99499.08, 99499.09, 99499.10, 99499.11, 99499.12,  son excluyentes entre sí.  |  |  |  |  | 
+Fila 34:  | 056 , 070 | Consulta estomatologica  | D014, D0160 | Los códigos D014, D0160, son excluyentes entre sí.  |  |  |  |  | 
+Fila 35:  | 051, 052, 054, 055, 064, 065, 066, 067, 068 | Dosaje de Gases en sangre | 82800, 82803.01, 82803, 82805 | No permite el ingreso del CPMS 36600 en simultaneo con alguno de los codigos: 82800, 82803.01, 82803, 82805 |  |  |  |  | 
+
+
+
+================================================================================
+HOJA: RC_33
+================================================================================
+Fila 2:  | REGLA DE CONSISTENCIA Nº 33:
+DENOMINACIÓN: Registro obligatorio de datos del recién nacido.  |  |  | 
+Fila 3:  | OBJETIVO: Obligar el registro de DNI, CNV o código de afiliación en la prestación de parto, asegurando la integración al circuito de identidad |  |  | 
+Fila 4:  | Codigo de servicio | CIE 10 | CRITERIO | ACCION
+Fila 5:  | 054, 055, 065, 066, 067, 068  y 306  | O800 o O8000 o O8001 o O801 o O808 o O809 o O840 o O841 o O842 o O848 o O849 o O820 o O821 o O822 o O828 o O829 o O842 | DEBE REGISTRARSE POR LO MENOS UN CÓDIGO DE DNI/CNV/AFILIACION EN EL FUA DEL PARTO, NO APLICA EN ASEGURADAS DEL COMPONENTE SEMISUBSIDADO Y MYPES  Y/O
+FUAS CON EL REGISTRO DE UNO DE LOS SIGUIENTES DIAGNÓSTICOS: O36.4 (ATENCIÓN MATERNA POR MUERTE INTRAUTERINA) Y P95X - MUERTE FETAL (NACIDO MUERTO) | No dejar grabar FUAS que incumplen con el criterio
+
+
+
+================================================================================
+HOJA: RC_34
+================================================================================
+Fila 1: REGLA DE CONSISTENCIA Nº 34: 
+DENOMINACIÓN: Registro de diagnóstico obligatorio en tamizaje de salud mental patológico |  |  |  |  | 
+Fila 2: OBJETIVO: Obligar el registro de diagnósticos en el tamizaje de salud mental patológico. |  |  |  |  | 
+Fila 3: CODIGO PRESTACIONAL | ACTIVIDAD  PREVENTIVA | DIAGNOSTICOS A REGISTRAR | CRITERIO | ACCIÓN | 
+Fila 5: Control de crecimiento y desarrollo en menores de 0 - 4 años (001),
+Control del recién nacido con menos de 2,500 gr. (002). 
+Control de crecimiento y desarrollo en menores de 5 - 9 años (118) y 
+Control de crecimiento y desarrollo en menores de 10 - 12 años (119)
+Atención Integral del adolescente (017)
+Atención prenatal (009)
+Detección de problemas en Salud Mental (022)
+Atención Preconcepcional (902)
+Atenciòn Integral de Salud del Adulto Mayor (903)
+Atención Integral de Salud del Joven, Adulto  (904)
+Atención del puerperio normal (010)
+Cuidado Integral de salud del Niño (301)
+Cuidado Integral de salud  del Adolescente (302)
+Cuidado Integral de salud  del Joven (303)
+Cuidado Integral de salud del Adulto (304)
+Cuidado Integral de salud  del Adulto Mayor (305)
+Cuidado Integral de salud Prenatal (306) | Tamizaje de Salud Mental Patológico | F000 - F989 Trastornos mentales
+X60 - X83 Lesiones autoinfligidas intencionalmente
+T740 - T749 Síndromes del maltrato
+Y040 - Y049 Agresión con fuerza corporal
+Y050 - Y059 Agresión sexual con fuerza corporal
+Y060 - Y068 Negligencia y abandono
+Y070 - Y079 Otros síndromes de maltrato
+Y870 - Y871 Secuelas de lesiones autoinfligidas intencionalmente, agresiones y eventos de intención no determinada
+R456 Problemas relacionados con violencia
+Z600 - Z619 Problemas relacionados con la salud mental
+Z620 - Z629 Otros problemas relacionados con la crianza de la niña o niño.
+Z630 - Z659 Otros problemas relacionados con el grupo primario de apoyo, Inclusive circunstancias familiares
+Z720 - Z735 Problemas relacionados con el estilo de vida | Registrar al menos uno de los diagnósticos | No dejar grabar si incumple el criterio | 
+Fila 6: Precisiones para la aplicación de la regla:
+Si el campo "Tamizaje de Salud Mental" es marcado como patológico, se deberá registrar al menos uno de los diagnósticos establecidos en la regla; en caso de un resultado normal, no se requiere registrar diagnósticos. |  |  |  |  | 
+
+
+
+================================================================================
+HOJA: RC_35
+================================================================================
+Fila 2:  | REGLA DE CONSISTENCIA Nº 35: 
+DENOMINACIÓN: Registro de medicamentos específicos por código prestacional o diagnostico. |  |  |  |  |  |  | 
+Fila 3:  | Objetivo: Obliga el registro de medicamentos para prestaciones preventivas  |  |  |  |  |  |  | 
+Fila 4:  | CODIGO PRESTACIONAL | CIE 10 | DESCRIPCIÓN | ELEMENTO | CÓDIGO DE MEDICAMENTO | CRITERIO | NIVEL | ACCIÓN
+Fila 5:  | Z2982 | 007 | Sulfato Ferroso
+
+ | Medicamento | 03516 ó 03517 ó 03519  ó 03520 ó 03521 ó 03523  ó 03535 ó 03536 ó 03537  ó  03538 ó 03542  ó 03545 ó 03546 ó 03547  ó 03548 ó 03552 ó  19223  ó  21648 ó 03560  21643 ó 28551 ó 29165 
+ | REGISTRO DE UNO DE LOS MEDICAMENTOS (1) | I NIVEL Y II NIVEL CON POBLACION ADSCRITA | No dejar grabar si incumple el criterio
+Fila 6:  |  |  | Complejo Polimaltosa Ferrico | Medicamento | 01759 ó 03560  ó 21643  ó 28551 ó 29165 ó 33524 ó 47580 |  |  | 
+Fila 7:  |  |  | Otras combinaciones de multivitaminas | Medicamento | 20575  |  |  | 
+Fila 8:  | Z2981 | 007 | Vitamina A | Medicamento | 08153 ó 18132 | REGISTRO DEL MEDICAMENTO (2) |  | 
+Fila 9:  | Z299 | 008 | Albendazol | Medicamento | 00259 ó 00269 ó 00270 | REGISTRO DE UNO DE LOS MEDICAMENTOS SIENDO ALBENDAZOL EXCLUYENTE DE MEBENDAZOL (3)  |  | 
+Fila 10:  |  |  | Mebendazol |  | 04573 ó 04574 ó 04575 ó 04576 ó 04577 ó 04578 ó 04579 ó 04580 ó 04581 ó 04582 ó 04583 ó 04584 ó 04585 o 04586 |  |  | 
+Fila 11:  | Z340 o Z348 o Z349 o Z3490 o Z3491 o Z3492 o Z3493 o Z34X o Z359 o Z3591 o Z3592 o Z3593 o Z35X | 009 | Suplementación de ácido fólico  | Medicamento | 00200 ó  01449 | REGISTRO DEL  MEDICAMENTO (4)(5) |  | 
+Fila 12:  |  |  | Suplementación de sulfato ferroso y ácido fólico | Medicamento | 03513 ó 33577 ó 35542  ó 03552 |  |  | 
+Fila 13:  |  |  | Suplementación de calcio | Medicamento | 20635 ó  01449 |  |  | 
+Fila 14:  | Z380 o Z381 o Z382 o Z383 o Z384 o Z385 o Z386 o Z387 o Z388 | 050 | Tetraciclina clorhidrato | Medicamento | 06111 | REGISTRO DEL  MEDICAMENTO |  | 
