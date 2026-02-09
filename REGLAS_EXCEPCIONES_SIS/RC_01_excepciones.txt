@@ -1,0 +1,14 @@
+"Precisiones: 
+* SÍ: El campo DEBE ser marcado/llenado; NO: El campo NO debe ser marcado/llenado; OPCIONAL: El campo PUEDE ser marcado/llenado de corresponder el caso pero también puede ser dejado en blanco de NO corresponder.										
+PARA EL CASO DE LOS PACIENTES HOSPITALIZADOS:					
+EDAD = (FECHA DE INGRESO) - (FECHA DE NACIMIENTO).
+Ejm: Si un niño nació el 03 de febrero del 2009 e ingresó el 05 de febrero del 2009, su edad será de 02 días.									
+POR TANTO; PARA HOSPITALIZADOS, LA EDAD ESTARÁ SUPEDITADA A LA EDAD AL INGRESO DEL PACIENTE DADO POR LA FÓRMULA ANTERIOR . TENER ESTO EN CUENTA AL MOMENTO DE USAR EL CÓDIGO PRESTACIONAL DE INTERNAMIENTO DE RECIÉN NACIDO C/ O s/ INTERV. QX (válido hasta los 28 días de vida) VS EL CÓDIGO PRESTACIONAL DE INTERNAMIENTO EN EESS C/ O S/ INTERV. QX. (válido a partir de los 29 días de vida).								
+OPERATIVIZACIÓN DEL TÉRMINO ""EDAD MÁXIMA"":					
+Para el caso de AÑOS, por ejemplo si edad maxima es 3 años, considerar a todos los niños menores de 4 años. Lo mismo para todos los casos en que la edad se fija en años. 											
+Para el caso de MESES, por ejemplo si edad maxima es 12 meses, considerar a todos los niños menores de 13 meses. Lo mismo para todos los casos en que la edad se fija en meses. 									
+Para el caso de DIAS, por ejemplo si edad maxima es 28 Dìas, considerar a todos los niños menores de 29 días. Lo mismo para todos los casos en que la edad se fija en dias. 											
+OPERATIVIZACIÓN DEL TÉRMINO ""EDAD MINIMA"" EN EL CASO DE RANGOS:	
+Para el caso que una prestación tenga un rango de Edad Mínima: 5 años y Edad Máxima: 10 años, se debe considerar de la siguiente manera: sera desde mayor o igual a 5 años hasta menor de 11 años.							
+(**) Cuando los datos que van en el formato son los de la madre (Caso de óbito fetal).											
+(***) En el caso de registro de los CIE 10 O800 o O8000 o O8001 o O801 o O808 o O809 o O840 o O841 o O842 o O848 o O849, se debe considerar como ""S"""										

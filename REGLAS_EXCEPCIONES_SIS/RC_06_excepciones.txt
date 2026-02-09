@@ -1,0 +1,25 @@
+Las presentaciones LIQ ORAL serán unificadas en la denominación JBE.							
+Excepción 1(1): Esta regla no aplica para las Coberturas Extraordinarias en el marco  de la Ley Nº 29344 y D.S. 007-2012-SA							
+Excepcion 5(5) : Para el Listado de medicamentos e insumos que deben emplear "unidades de consumo" en lugar de "unidades de compra" remitido por la GNF,  se establece topes de hasta 999 para los "no hospitalizados" y de hasta 9999 para hospitalizados". Excepto : para la FF liquido y gas.							
+"Excepcion 6 (6): Para los códigos SISMED 38862 ó 38864 ó 38866, sólo nivel III permitir el registro hasta 30 Unidades.
+Para los códigos SISMED 38861 ó 38863 ó 38865, sólo nivel III permitir el registro hasta 10 Unidades.
+Para los códigos SISMED 38867, sólo nivel III permitir el registro hasta 06 Unidades."							
+Excepcion 7(7): Para los códigos SISMED 11824, 11825, 19879, 21012, 21013, 21014, 21072, 21073, 21853, 21854, 21855, 21856, 21857, 27618, 31512, 21858 y 23633 vinculados a los DX N18 ( N180, N188 y N189) permitir el registro hasta 124 unidades. Aplica únicamente para  el II y III nivel sin población adscrita.							
+Excepción 9(9): En pacientes no hospitalizados con diagnóstico CIE-10: L400, L401,L404,L405, L408, L409, para quienes el tope máximo puede ser de 04 unidades de crema tópica para el I y II nivel de atención de medicamentos que se encuentran en el PNUME. 							
+Excepción 10 (10): Para el código SISMED 20575, permitir el registro hasta 90 unidades. Aplica en el I, II y III nivel de atención.							
+Excepción 11 (11): En pacientes no hospitalizados del Instituto Nacional de Rehabilitación  con diagnóstico CIE-10: N319, T093, G958, I63, I61, I60, I638, I639, I633, S063, permitir el registro hasta 24 unidades.							
+Excepción 12 (12): En el caso de diagnóstico G40.X permitir el registro del código SISMED 01532 (Carbamazepina 200mg) de hasta 810 unidades, prescrito por médico especialista en Neurología con RNE, en hospitalizados y no hospitalizados. Aplica para el II y III nivel de atención.							
+Excepción 13 (13): En el caso de diagnóstico G40.X permitir el registro del código SISMED 01525 (Carbamazepina 100mg/5ml suspensión 100ml) hasta 06 unidades, prescrito por médico especialista en Neurología con RNE, en hospitalizados y no hospitalizados. Aplica para el II y III nivel de atención.							
+Excepción 14 (14): En el caso de pacientes no hospitalizados, el tope será 180 tabletas prescrito por médico especialista con RNE en neurología, psiquiatría, nefrología, endocrinología. Aplica para el II nivel de atención.							
+Excepción 17 (17): En el caso de los diagnósticos E230 ó E232, permitir el registro del código SISMED 02587 (desmopresina acetato 10 ug/100 ul AER 5ml) hasta 08 unidades, en NO HOSPITALIZADOS. Aplica para el II y III nivel de atención.							
+Excepción 18 (18): En el caso del diagnósticos G700, permitir el registro del código SISMED 01341 (piridostigmina bromuro 60 mg) hasta 370 tabletas, en NO HOSPITALIZADOS. Aplica para el II nivel de atención.							
+Excepción 19 (19): En pacientes no hospitalizados atendidos en el nivel I y II, unicamente que cuente con el registro de las siguientes la familias de diagnósticos: del E10 al E14 , del I10 al I15 y del N18 al N19, permitir el registro hasta de 270 TABLETAS							
+"Excepción 4 (4); En el caso de los Hospitales Instituto Nacional de Salud mental Honorio Delgado-Hideyo Noguchi, Hospital Victor Larco herrera, Hospital Hermilio
+Valdizan e Instituto Nacional de Salud del Niño-Breña, en el código prestacional 056, 901 Y 300, para la presentación de tabletas (TAB), se permitirán el ingreso de los medicamentos y Dx de Salud Mental según cuadro adjunto:"							
+
+Para el caso de los Centros de Salud Mental Comunitarios-CSMC  a nivel Nacional  en el I nivel de atención  en el código prestacional 056, para las presentaciones de tabletas (TAB), se permitirán el ingreso de los medicamentos y Dx de Salud Mental según cuadro adjunto:	
+
+
+Excepción 16 (16); para el caso de la IPRESS II-2: HOSPITAL DE LA AMISTAD PERÚ - COREA SANTA ROSA , para los códigos prestacionales: 009, 056, 060, 064, 075, 901, 902, 300, 908, para la presentación de tabletas (TAB) prescritas por médicos especilistas con RNE, se permitirán el ingreso de los medicamentos y Dx según cuadro adjunto:							
+						
+

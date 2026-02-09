@@ -1,0 +1,17 @@
+(*) La aplicación de esta regla en el código 056 se exceptúa en los siguientes diagnósticos:
+- CIE-10: B15.9; J00; A09; Z35.0-Z35.9 (Para nivel I, II y III) 
+- Z10.8 (OTROS CONTROLES GENERALES DE SALUD DE RUTINA DE OTRAS SUBPOBLACIONES DEFINIDAS) + otro diagnóstico CIE 10 que motiva la atención de control (Éstos dos últimos sólo nivel III y nivel II);  en los que puede aceptarse como válidos en caso no presenten medicamentos ni procedimientos consumidos.
+- Z09.8 (Examen de seguimiento consecutivo a otro tratamiento por otras afecciones) + otro diagnóstico CIE 10 que motiva la atención de control,  en los que puede aceptarse como válidos en caso no presenten medicamentos ni procedimientos consumidos (Para III nivel y II Nivel)
+
+(**) Excepto en los establecimientos de nivel II y III, donde se aplica el concepto si faltan ambos.
+
+(***) Excepto si se registra en la sección “Paquete” los códigos de paquete 001 o 002.
+
+LEYENDA:
+
+Si falta: No deja grabar si falta el ítem marcado con "X".
+
+Si faltan alguno:  Para ser aceptada en el sistema, la prestación requiere la presencia de por lo menos un componente. No deja grabar si no se ha registrado al menos un medicamento, insumo, procedimiento o apoyo al diagnóstico.
+
+Si falta ambos: Para ser aceptada en el sistema, la prestación requiere la presencia de ambos componentes. No deja grabar si no se ha registrado algún consumo de "Medicamentos o insumos" y de "Procedimientos o Apoyo al Diagnóstico".
+

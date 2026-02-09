@@ -1,0 +1,7 @@
+"Leyenda: 											
+El destino del Inscrito/Asegurado se debe registrar con un aspa (X).			
+Para los casos de corte administrativo se consignará el numero de corte administrativo de acuerdo a lo indicado en la RJ 107-2015/SIS.			
+(*) Exonerar la aplicación de esta regla en el código 056 cuando se encuentre registrado los procedimientos 99499.04,99499.11, 99499.12.				
+(**) Exonerar la aplicación de esta regla en el código 071 cuando se encuentre registrado los procedimientos 99499.02, 99499.05, 99499.06, 99499.07		
+(***) Exonerar la aplicación de esta regla en el código 906 cuando se encuentre registrado los procedimientos 99499.04,99499.11, 99499.12.				
+(* * * * *)  para el registro de la prestación con código  025,deteccion precoz de Cancer de mama (mamografía) eliminar el requisito del   destino   del paciente  como referido 												"											

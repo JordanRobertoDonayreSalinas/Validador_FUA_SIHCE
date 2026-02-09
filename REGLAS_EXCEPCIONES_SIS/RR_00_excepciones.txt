@@ -1,0 +1,1 @@
+(*) No aplica para la afiliación temporales. La afiliación temporal y directa debe vincularse.

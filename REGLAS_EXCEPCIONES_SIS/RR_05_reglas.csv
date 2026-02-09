@@ -1,0 +1,57 @@
+﻿NUM_REGISTRO;COD ACT. PREVENTIVA;ACTIVIDAD PREVENTIVA;VALOR 1;VALOR 2;MÍNIMA;MÁXIMA;Tipo de formato
+1;400;EEDP/TEPSI/TA;SI;NO;;;Texto
+2;19;Recien Nacido Prematuro;SI;NO;;;Texto
+3;20;Bajo peso al nacer;SI;NO;;;Texto
+4;21;Enfermedad Congénita/ Secuelas de nacimiento ;SI;NO;;;Texto
+5;307;Consejería Nutricional ;SI;NO;;;Texto
+6;18;Valoración Clínica del Adulto Mayor (VACAM) anual;SI;NO;;;Texto
+7;401;Evaluación Integral de Salud del joven o adulto anual (Eval. Joven y Adulto);SI;NO;;;Texto
+8;13;Consejeria Integral;SI;NO;;;Texto
+9;408;Parto Vertical;SI;NO;;;Texto
+10;409;Corte Tardío de Cordón (>2 a 3 min);SI;NO;;;Texto
+11;410;Vacunas completas para la edad;SI;NO;;;Texto
+12;407;Tamizaje de Salud Mental;PATOLOGICO;NORMAL;;;Texto
+13;SC;Grupo Riesgo;No tiene, Trabajadores de Salud, Trabajadores Sexuales, HSH, Privados de Libertad, FF.AA., Policia Nacional, Estudiantes de Salud, Politransfundidos y Drogo Dependiente;No tiene, Trabajadores de Salud, Trabajadores Sexuales, HSH, Privados de Libertad, FF.AA., Policia Nacional, Estudiantes de Salud, Politransfundidos y Drogo Dependiente;;;Texto
+14;102;Vacuna  contra BCG;;;1;9;Numero entero
+15;117;Vacuna  contra DPT;;;1;9;Numero entero
+16;124;Vacuna Pentavalente ;;;1;9;Numero entero
+17;125;Vacuna contra Sarampión, Paperas y Rubéola (SPR);;;1;9;Numero entero
+18;126;Vacuna contra Neumococo;;;1;9;Numero entero
+19;127;Vacuna contra Rotavirus;;;1;9;Numero entero
+20;211;Vacuna Anti Amarílica (AMA);;;1;9;Numero entero
+21;313;Vacuna contra Antipolio Oral (APO);;;1;9;Numero entero
+22;315;Vacuna contra la Hepatitis B en recien nacidos (HVB);;;1;9;Numero entero
+23;316;Vacuna  contra Antipolio Inactivada inyectable (IPV);;;1;9;Numero entero
+24;317;Vacuna contra Sarampión y Rubeola (SR);;;1;9;Numero entero
+25;323;Vacuna contra Haemophilus Influenzae tipo B (HIB);;;1;9;Numero entero
+26;319;Vacuna contra el Virus de Papiloma Humano (VPH);;;1;9;Numero entero
+27;324;Vacuna Toxoide Diftotetano Pediátrico - DT;;;1;9;Numero entero
+28;325;Vacuna contra DT Adultos;;;1;9;Numero entero
+29;403;Vacuna contra la Hepatitis B (HVB) mayores de 5 años;;;1;9;Numero entero
+30;405;Vacuna contra  Influenza ;;;1;9;Numero entero
+31;411;Vacuna contra la varicela;;;1;9;Numero entero
+32;412;Vacuna dPta para gestante;;;1;9;Numero entero
+33;413;Vacuna contra el Virus de la Hepatitis A (HVA);;;1;9;Numero entero
+34;106;Vacuna Antisarampionosa;;;1;9;Numero entero
+35;121;Vacuna Anti Parotiditis;;;1;9;Numero entero
+36;122;Vacuna Anti Rubeola;;;1;9;Numero entero
+37;314;Vacuna ASA;;;1;9;Numero entero
+38;208;Vacuna Antitetánica;;;1;9;Numero entero
+39;SC;Otra vacuna*;;;1;9;Numero entero
+40;300;CPN;;;1;30;Numero entero
+41;120;Control CRED;;;1;30;Numero entero
+42;209;Control de Puerperio;;;1;10;Numero entero
+43;305;APGAR 1°;;;1;10;Numero entero
+44;306;APGAR 5°;;;1;10;Numero entero
+45;404;Número de acompañantes de la Gestante o puerpera en casa materna;;;0;10;Numero entero
+46;5;Edad Gestacional embarazo (en Semanas);;;1;42;Numero entero
+47;10;Altura Uterina ;;;0;50;Numero entero
+48;304;Edad Gest RN (Semanas);;;20;42;Numero entero
+49;3;Peso (Kg);;;0;350;Numeros con decimal o entero
+50;4;Talla (cm.);;;10;250;Numeros con decimal o entero
+51;14;IMC (kg/m2);;;10;56;Numeros con decimal o entero
+52;15;PAB (cm.);;;30;200;Numeros con decimal o entero
+53;414;HB.Glicosilada (mg/dL);;;1;20;Numeros con decimal o entero
+54;415;Dosaje de albumina en orina (ug/mL);;;1;500;Numeros con decimal o entero
+55;416;Depuración de creatinina (mL/min);;;0;200;Numeros con decimal o entero
+56;301;P.A. (mmHg);;;SISTÓLICA 00 a 400;DIASTÓLICA 00 a 300;Numeros con decimal o entero

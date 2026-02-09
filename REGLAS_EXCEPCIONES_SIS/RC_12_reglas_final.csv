@@ -1,0 +1,52 @@
+﻿codigo_prestacional,denominacion,accion_bloqueo,requiere_med_insumo,requiere_apoyo_proc
+007,Suplemento de micronutrientes,Si falta alguno,1,1
+008,Profilaxis antiparasitaria,Si falta alguno,1,1
+011,Exámenes de laboratorio completo de la gestante,Si falta,0,1
+013,Exámenes de ecografía obstétrica,Si falta,0,1
+015,Diagnóstico del embarazo,Si falta,0,1
+019,Detección de trastornos de agudeza visual y ceguera ,Si falta,0,1
+020,Salud Bucal,Si falta,0,1
+911,Instrucción de Higiene Oral y Asesoría nutricional para el control de enfermedades dentales,Si falta,0,1
+021,Prevención de caries ,Si falta,0,1
+023,Deteccion precoz de cancer de prostata (PSA),Si falta,0,1
+024,Deteccion precoz de cáncer cérvico-uterino,Si falta,0,1
+025,Deteccion precoz de cancer de mama (Mamografía),Si falta,0,1
+026,Tratamiento profilactico para gestante positiva a prueba rápida/ELISA VIH,Si  falta,1,0
+027,Tratamiento profilactico a niños expuestos al VIH,Si falta ,1,0
+050,Atención inmediata del recién nacido,Si  faltan alguno,1,1
+051,Internamiento del RN con patología no quirúrgica,Si  faltan alguno,1,1
+052,Internamiento con intervención quirúrgica del RN.,Si falta alguno,1,1
+053,Tx. VIH/SIDA (0 - 19 años),Si falta ,1,0
+054,Atención de parto vaginal (2)(***),Si falta alguno,1,1
+055,Cesárea(***),Si  faltan ambos,1,1
+902,Atención Preconcepcional,Si  faltan alguno,1,1
+903,Atenciòn Integral de Salud del Adulto Mayor,Si falta,0,1
+904,"Atención Integral de Salud del Joven, Adulto ",Si falta,0,1
+906,Consulta externa por profesionales no médicos ni odontólogos ,Si falta,0,1
+056,Consulta externa (*),Si  faltan alguno,1,1
+057,Restauracion dental simple (Obturación y curación dental simple).,Si falta ,0,1
+058,Restauracion dental compuesta (Obturación y curación dental compuesta),Si falta ,0,1
+059,Extraccion dental (exodoncia),Si falta alguno,1,1
+061,Atención en tópico,Si falta ,0,1
+062,Atencion por emergencia ,Si  faltan alguno,1,1
+063,Atencion por emergencia con observación,Si  faltan alguno,1,1
+064,Intervención médico-quirurgica ambulatoria,Si  faltan alguno,1,1
+065,Internamiento en establecimiento de salud sin intervención quirúrgica,Si faltan ambos,1,1
+066,Internamiento con intervención quirurgica menor,Si faltan ambos,1,1
+067,Internamiento con intervención quirúrgica mayor (No Cesarea).,Si faltan ambos,1,1
+068,Internamiento con Estancia en la Unidad de Cuidados Intensivos (UCI),Si faltan ambos,1,1
+069,Transfusión sanguínea o hemoderivados,Si falta,0,1
+070,Atención odontológica especializada,Si  faltan alguno,1,1
+071,Apoyo al diagnóstico,Si falta,0,1
+074,"Prevención, detección y tratamiento de ITS en adolescentes, jóvenes, adultos y adultos",Si  faltan alguno,1,1
+029,Tamizaje Neonatal,Si falta,0,1
+901,Apoyo al Tratamiento,Si falta ,0,1
+900,Prótesis Dental Removible,Si faltan ambos,1,1
+200,Atención de Rehabilitación,Si falta ,0,1
+300,Telemedicina,Si falta ,0,1
+301,Cuidado Integral de salud del Niño,Si falta alguno,1,1
+302,Cuidado Integral de salud del Adolescente,Si falta alguno,1,1
+303,Cuidado Integral de salud del  Joven,Si falta alguno,1,1
+304,Cuidado Integral de salud del Adulto,Si falta alguno,1,1
+305,Cuidado Integral de salud del Adulto Mayor,Si falta alguno,1,1
+306,Cuidado Integral de salud Prenatal,Si falta alguno,1,1

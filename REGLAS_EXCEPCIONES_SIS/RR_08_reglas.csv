@@ -1,0 +1,20 @@
+﻿CODIGO;DESCRIPCION;Colegiatura;Especialidad
+1;Médico;SI;OPCIONAL
+2;Farmacéutico;SI;NO
+3;Odontólogo;SI;OPCIONAL
+4;Biólogo;SI;NO
+5;Obstetra;SI;NO
+6;Enfermera;SI;NO
+7;Trabajadora Social;SI;NO
+8;Psicólogo;SI;NO
+9;Tecnólogo Médico;SI;NO
+10;Nutricionista;SI;NO
+11;Técnico en Enfermería;NO;NO
+12;Auxiliar de Enfermería;NO;NO
+13;Técnico de Laboratorio;NO;NO
+15;Técnico de Farmacia;NO;NO
+16;Técnico PROG. Radiología;NO;NO
+25;Tecnico en rayos X;NO;NO
+26;Licenciado en educación especial (*);SI;OPCIONAL
+27;Tecnico en Fisioterapia y Rehabilitación;NO;NO
+28;Técnico en Optometría;NO;NO

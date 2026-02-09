@@ -1,0 +1,5 @@
+﻿id_condicion,descripcion_validacion,aplica_afiliacion_temporal
+1,FUA no registra Identificador único de la afiliación en la base de datos,1
+2,FUA con asegurado sin cobertura prestacional acorde a su contrato o plan de beneficios (cobertura no esta vigente),1
+3,FUA cuya fecha de atención no está entre la fecha de afiliación y la fecha de baja,0
+4,FUA con datos incorrectos: Los datos de la afiliación deben ser los mismos en el FUA y el formato de afiliación (N° de doc. De identidad, apellidos, nombres, fecha de nacimiento, sexo),0
