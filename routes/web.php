@@ -6,9 +6,13 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Modulo_Fua\FuaElectronicaController;
 use App\Http\Controllers\Modulo_Administrador\UserController;
 
+use App\Http\Controllers\Modelo1\SimuladorController;
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/simulador', [SimuladorController::class, 'index'])->name('simulador.index');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
