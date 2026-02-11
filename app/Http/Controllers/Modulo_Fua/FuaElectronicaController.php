@@ -47,6 +47,24 @@ class FuaElectronicaController extends Controller
             $file = $request->file('archivo_excel');
             $opciones = $request->input('pestanas');
 
+            // Loguear la información recibida para depuración
+            \Log::info('Fua import - archivo recibido', [
+                'name' => $file ? $file->getClientOriginalName() : null,
+                'size' => $file ? $file->getSize() : null,
+            ]);
+            \Log::info('Fua import - opciones recibidas', ['opciones' => $opciones]);
+
+            // Obtener ruta real del archivo subido y listar nombres de pestañas (sheets)
+            $path = $file ? $file->getRealPath() : null;
+            try {
+                if ($path) {
+                    $sheetNames = \PhpOffice\PhpSpreadsheet\IOFactory::load($path)->getSheetNames();
+                    \Log::info('Fua import - nombres de pestañas en el Excel', ['sheets' => $sheetNames]);
+                }
+            } catch (\Exception $e) {
+                \Log::warning('Fua import - no se pudo leer nombres de pestañas: ' . $e->getMessage());
+            }
+
             // --- INICIO: LIMPIEZA AUTOMÁTICA DE BASE DE DATOS ---
             // Esto borrará toda la información anterior antes de cargar la nueva.
             
@@ -66,7 +84,17 @@ class FuaElectronicaController extends Controller
             // --- FIN: LIMPIEZA ---
 
             // Ejecutamos la importación pasando las opciones seleccionadas
-            Excel::import(new FuaMainImport($opciones), $file);
+            // Usar la ruta real del archivo para la importación (más fiable en algunos entornos)
+            Excel::import(new FuaMainImport($opciones), $path ?? $file);
+
+            // Loguear conteos en BD tras la importación para verificar inserts
+            \Log::info('Fua import - totales en BD', [
+                'atencion_detallado' => FuaAtencionDetallado::count(),
+                'consumo' => FuaConsumo::count(),
+                'smi' => FuaSmi::count(),
+                'principal_adicional' => FuaPrincipalAdicional::count(),
+                'reporte_estado' => FuaReporteEstado::count(),
+            ]);
 
             return redirect()->route('fua.index')->with('success', 'Importación completada con éxito.');
 
@@ -94,21 +122,23 @@ class FuaElectronicaController extends Controller
         }
     }
 
-    public function validarReglas(ReglasValidacionService $validador)
+    public function validar(ReglasValidacionService $validador)
     {
         try {
-            $cantidadErrores = $validador->ejecutarValidacion();
+            // Llamamos a la función con el nombre CORRECTO
+            $cantidadErrores = $validador->ejecutarValidacion(); 
 
             if ($cantidadErrores > 0) {
                 return redirect()->route('fua.index')
-                    ->with('warning', "Se encontraron $cantidadErrores registros con observaciones. Revisa la lista.");
+                    ->with('warning', "Se detectaron $cantidadErrores registros con observaciones.");
             }
 
             return redirect()->route('fua.index')
-                ->with('success', 'Validación exitosa: Todos los registros cumplen la norma técnica.');
+                ->with('success', '¡Excelente! Todos los registros son conformes.');
 
         } catch (\Exception $e) {
-            return back()->with('error', 'Error al validar: ' . $e->getMessage());
+            // Esto te mostrará el error real en pantalla si algo falla
+            return back()->with('error', 'Error crítico al validar: ' . $e->getMessage() . ' en línea ' . $e->getLine());
         }
     }
 
@@ -119,13 +149,13 @@ class FuaElectronicaController extends Controller
             Schema::disableForeignKeyConstraints();
 
             // Orden de limpieza: Primero las tablas hijas, al final las tablas padres
-            \App\Models\FuaConsumo::truncate();
-            \App\Models\FuaSmi::truncate();
-            \App\Models\FuaPrincipalAdicional::truncate(); // Asegúrate del nombre correcto del modelo
-            \App\Models\FuaReporteEstado::truncate();
+            FuaConsumo::truncate();
+            FuaSmi::truncate();
+            FuaPrincipalAdicional::truncate(); // Asegúrate del nombre correcto del modelo
+            FuaReporteEstado::truncate();
             
             // Finalmente la tabla maestra
-            \App\Models\FuaAtencionDetallado::truncate();
+            FuaAtencionDetallado::truncate();
 
             Schema::enableForeignKeyConstraints();
 

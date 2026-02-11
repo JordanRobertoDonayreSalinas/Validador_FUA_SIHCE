@@ -34,4 +34,9 @@ class FuaAtencionDetallado extends Model
     {
         return $this->hasMany(FuaSmi::class, 'fua_id', 'fua_id');
     }
+
+    public function reporte()
+    {
+        return $this->hasOne(FuaReporteEstado::class, 'fua_id', 'fua_id');
+    }
 }

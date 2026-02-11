@@ -30,7 +30,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/create', [FuaElectronicaController::class, 'create'])->name('create');
         Route::post('/store', [FuaElectronicaController::class, 'store'])->name('store');
 
-        Route::post('/fua/validar', [FuaElectronicaController::class, 'validarReglas'])->name('validar');
+        Route::post('/fua/validar', [FuaElectronicaController::class, 'validar'])->name('validar');
 
         Route::delete('/limpiar-bd', [FuaElectronicaController::class, 'destroyAll'])->name('destroyAll');
     });
